@@ -4,7 +4,7 @@ import { NAV_ITEMS } from '../../utils/navigation.js'
 
 export default function DesktopNavigation({ concept = 'a' }) {
   const isConceptA = concept === 'a'
-  const { currentPath, navigate, isActive } = useRouter()
+  const { currentPath, navigate, isActive, openModal } = useRouter()
   const [openDropdown, setOpenDropdown] = useState(null)
   const navRef = useRef(null)
 
@@ -103,27 +103,20 @@ export default function DesktopNavigation({ concept = 'a' }) {
                     }}
                   >
                     {item.dropdown.map((sub) => {
-                      const subActive = currentPath === sub.href
+                      const subActive = sub.href ? currentPath === sub.href : false
 
                       return (
-                        <button
+                        <div
                           key={sub.label}
-                          type="button"
-                          role="menuitem"
-                          onClick={() => {
-                            navigate(sub.href)
-                            setOpenDropdown(null)
-                          }}
                           style={{
-                            display: 'block',
-                            width: '100%',
-                            textAlign: 'left',
-                            padding: '10px 14px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
                             borderRadius: '8px',
                             background: subActive ? activeBg : 'transparent',
-                            border: 'none',
-                            cursor: 'pointer',
                             transition: 'background 0.15s',
+                            padding: '4px',
+                            marginBottom: '2px',
                           }}
                           onMouseEnter={(e) => {
                             if (!subActive) e.currentTarget.style.background = isConceptA ? '#F6F3ED' : '#14545A'
@@ -132,22 +125,79 @@ export default function DesktopNavigation({ concept = 'a' }) {
                             if (!subActive) e.currentTarget.style.background = 'transparent'
                           }}
                         >
-                          <div
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => {
+                              if (sub.modal) {
+                                openModal(sub.modal)
+                              } else if (sub.href) {
+                                navigate(sub.href)
+                              }
+                              setOpenDropdown(null)
+                            }}
                             style={{
-                              fontSize: '13.5px',
-                              fontWeight: subActive ? 700 : 600,
-                              color: subActive ? activeColor : (isConceptA ? '#2F5147' : '#FAFAF7'),
-                              marginBottom: '2px',
+                              flex: 1,
+                              textAlign: 'left',
+                              padding: '8px 10px',
+                              background: 'transparent',
+                              border: 'none',
+                              cursor: 'pointer',
                             }}
                           >
-                            {sub.label}
-                          </div>
-                          {sub.desc && (
-                            <div style={{ fontSize: '11px', color: isConceptA ? '#666666' : '#A8CDC4', opacity: 0.85 }}>
-                              {sub.desc}
+                            <div
+                              style={{
+                                fontSize: '13.5px',
+                                fontWeight: subActive ? 700 : 600,
+                                color: subActive ? activeColor : (isConceptA ? '#2F5147' : '#FAFAF7'),
+                                marginBottom: '2px',
+                              }}
+                            >
+                              {sub.label}
                             </div>
+                            {sub.desc && (
+                              <div style={{ fontSize: '11px', color: isConceptA ? '#666666' : '#A8CDC4', opacity: 0.85 }}>
+                                {sub.desc}
+                              </div>
+                            )}
+                          </button>
+
+                          {sub.formModal && (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                openModal(sub.formModal)
+                                setOpenDropdown(null)
+                              }}
+                              title={`Open ${sub.formLabel}`}
+                              style={{
+                                padding: '4px 8px',
+                                fontSize: '11px',
+                                fontWeight: 700,
+                                borderRadius: '6px',
+                                border: `1px solid ${isConceptA ? '#2F5147' : '#A8CDC4'}`,
+                                background: isConceptA ? '#FFFFFF' : 'rgba(20,84,90,0.6)',
+                                color: isConceptA ? '#2F5147' : '#A8CDC4',
+                                cursor: 'pointer',
+                                whiteSpace: 'nowrap',
+                                marginLeft: '8px',
+                                marginRight: '4px',
+                                transition: 'all 0.15s',
+                              }}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.background = isConceptA ? '#2F5147' : '#A8CDC4'
+                                e.currentTarget.style.color = isConceptA ? '#FFFFFF' : '#1F303A'
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.background = isConceptA ? '#FFFFFF' : 'rgba(20,84,90,0.6)'
+                                e.currentTarget.style.color = isConceptA ? '#2F5147' : '#A8CDC4'
+                              }}
+                            >
+                              {sub.formLabel} ↗
+                            </button>
                           )}
-                        </button>
+                        </div>
                       )
                     })}
                   </div>

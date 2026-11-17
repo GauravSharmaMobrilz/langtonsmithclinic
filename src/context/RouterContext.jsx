@@ -16,6 +16,7 @@ export function RouterProvider({ children }) {
     const hash = window.location.hash.replace(/^#/, '')
     if (hash === 'modal-registration') return 'registration'
     if (hash === 'modal-health') return 'health-form'
+    if (hash === 'modal-client-consultation' || hash === 'modal-client-form') return 'client-consultation'
     return null
   }
   const [activeModal, setActiveModal] = useState(getInitialModal)
@@ -23,11 +24,13 @@ export function RouterProvider({ children }) {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace(/^#/, '') || '/'
-      // Check if hash is a modal trigger: #modal-registration or #modal-health
+      // Check if hash is a modal trigger: #modal-registration, #modal-health, or #modal-client-consultation
       if (hash === 'modal-registration') {
         setActiveModal('registration')
       } else if (hash === 'modal-health') {
         setActiveModal('health-form')
+      } else if (hash === 'modal-client-consultation' || hash === 'modal-client-form') {
+        setActiveModal('client-consultation')
       } else {
         setCurrentPath(hash)
         window.scrollTo({ top: 0, behavior: 'instant' })
@@ -40,7 +43,14 @@ export function RouterProvider({ children }) {
 
   const navigate = useCallback((path) => {
     if (path.startsWith('#modal-')) {
-      setActiveModal(path.replace('#modal-', '') === 'registration' ? 'registration' : 'health-form')
+      const modalKey = path.replace('#modal-', '')
+      if (modalKey === 'registration') {
+        setActiveModal('registration')
+      } else if (modalKey === 'health') {
+        setActiveModal('health-form')
+      } else if (modalKey === 'client-consultation' || modalKey === 'client-form') {
+        setActiveModal('client-consultation')
+      }
       return
     }
     window.location.hash = path.startsWith('/') ? path : `/${path}`
@@ -55,7 +65,7 @@ export function RouterProvider({ children }) {
   const closeModal = useCallback(() => {
     setActiveModal(null)
     const hash = window.location.hash.replace(/^#/, '')
-    if (hash === 'modal-registration' || hash === 'modal-health') {
+    if (hash === 'modal-registration' || hash === 'modal-health' || hash === 'modal-client-consultation' || hash === 'modal-client-form') {
       window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#/`)
       setCurrentPath('/')
     }

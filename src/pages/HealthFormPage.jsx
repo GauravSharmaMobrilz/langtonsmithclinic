@@ -35,7 +35,7 @@ export default function HealthFormPage({ concept = 'a' }) {
             concept={concept}
             items={[
               { label: 'Clinic Services', href: '/services/health-testing' },
-              { label: 'Client Health Form' },
+              { label: 'Bioresonance Health Form' },
             ]}
           />
 
@@ -53,7 +53,7 @@ export default function HealthFormPage({ concept = 'a' }) {
                 margin: '8px 0 20px',
               }}
             >
-              Client Health Intake & Assessment Form
+              Bioresonance Health Form & Intake Procedure
             </h1>
             <p style={{ fontSize: '17px', lineHeight: 1.7, color: isConceptA ? '#303832' : '#EEF3F2', margin: '0 0 28px' }}>
               Complete your pre-consultation health history, symptom inventory, and hair sample protocol. All health information is handled under strict practitioner confidentiality.
@@ -61,7 +61,7 @@ export default function HealthFormPage({ concept = 'a' }) {
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Button onClick={() => openModal('health-form')} variant="primary" concept={concept}>
-                ⚡ Open Client Health Intake Modal
+                ⚡ Open Bioresonance Health Form
               </Button>
             </div>
           </div>

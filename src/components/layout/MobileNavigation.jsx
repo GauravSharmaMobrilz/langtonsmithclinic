@@ -76,34 +76,71 @@ export default function MobileNavigation({ concept = 'a', isOpen, onClose }) {
               {openSection === item.label && (
                 <div style={{ paddingBottom: '8px', background: isConceptA ? '#FAF8F5' : '#182730' }}>
                   {item.dropdown.map((sub) => {
-                    const subActive = currentPath === sub.href
+                    const subActive = sub.href ? currentPath === sub.href : false
 
                     return (
-                      <button
+                      <div
                         key={sub.label}
-                        type="button"
-                        onClick={() => {
-                          navigate(sub.href)
-                          onClose()
-                        }}
                         style={{
-                          width: '100%',
-                          textAlign: 'left',
-                          display: 'block',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
                           padding: '10px 24px 10px 36px',
-                          fontSize: '14px',
-                          color: subActive ? accentColor : (isConceptA ? '#2F5147' : '#A8CDC4'),
-                          fontWeight: subActive ? 700 : 500,
                           background: subActive ? (isConceptA ? '#EFEBE4' : '#1F303A') : 'transparent',
-                          border: 'none',
-                          cursor: 'pointer',
                         }}
                       >
-                        <div>{sub.label}</div>
-                        {sub.desc && (
-                          <div style={{ fontSize: '11px', opacity: 0.7, marginTop: '2px' }}>{sub.desc}</div>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (sub.modal) {
+                              openModal(sub.modal)
+                            } else if (sub.href) {
+                              navigate(sub.href)
+                            }
+                            onClose()
+                          }}
+                          style={{
+                            flex: 1,
+                            textAlign: 'left',
+                            fontSize: '14px',
+                            color: subActive ? accentColor : (isConceptA ? '#2F5147' : '#A8CDC4'),
+                            fontWeight: subActive ? 700 : 500,
+                            background: 'transparent',
+                            border: 'none',
+                            cursor: 'pointer',
+                            padding: 0,
+                          }}
+                        >
+                          <div>{sub.label}</div>
+                          {sub.desc && (
+                            <div style={{ fontSize: '11px', opacity: 0.7, marginTop: '2px' }}>{sub.desc}</div>
+                          )}
+                        </button>
+
+                        {sub.formModal && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              openModal(sub.formModal)
+                              onClose()
+                            }}
+                            style={{
+                              padding: '3px 8px',
+                              fontSize: '11px',
+                              fontWeight: 700,
+                              borderRadius: '4px',
+                              border: `1px solid ${accentColor}`,
+                              background: 'transparent',
+                              color: accentColor,
+                              cursor: 'pointer',
+                              marginLeft: '8px',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            {sub.formLabel} ↗
+                          </button>
                         )}
-                      </button>
+                      </div>
                     )
                   })}
                 </div>
@@ -140,7 +177,7 @@ export default function MobileNavigation({ concept = 'a', isOpen, onClose }) {
         <button
           type="button"
           onClick={() => {
-            openModal('registration')
+            openModal('client-consultation')
             onClose()
           }}
           style={{
@@ -156,7 +193,7 @@ export default function MobileNavigation({ concept = 'a', isOpen, onClose }) {
             cursor: 'pointer',
           }}
         >
-          Practitioner Registration Modal
+          Client Form (Counselling & Hypnotherapy)
         </button>
 
         <button
@@ -178,7 +215,29 @@ export default function MobileNavigation({ concept = 'a', isOpen, onClose }) {
             cursor: 'pointer',
           }}
         >
-          Client Health Intake Modal
+          Bioresonance Health Form (Health Test)
+        </button>
+
+        <button
+          type="button"
+          onClick={() => {
+            openModal('registration')
+            onClose()
+          }}
+          style={{
+            display: 'block',
+            textAlign: 'center',
+            padding: '12px',
+            borderRadius: '8px',
+            background: 'transparent',
+            border: `1.5px solid ${accentColor}`,
+            color: accentColor,
+            fontSize: '14px',
+            fontWeight: 700,
+            cursor: 'pointer',
+          }}
+        >
+          Practitioner Registration Form (Training)
         </button>
 
         <button

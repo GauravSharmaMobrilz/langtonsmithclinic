@@ -17,20 +17,61 @@ export const NAV_ITEMS = [
     label: 'Clinic Services',
     href: '/services/health-testing',
     dropdown: [
-      { label: 'Bioresonance Health Testing', href: '/services/health-testing', desc: 'Remote 6-point Test via hair sample' },
-      { label: 'Counselling & Psychotherapy', href: '/services/counselling', desc: 'Transpersonal & mindful psychological care' },
-      { label: 'Clinical Hypnotherapy', href: '/services/hypnotherapy', desc: 'Senior clinical hypnotherapist practice' },
-      { label: 'Client Health Form', href: '/services/health-form', desc: 'Confidential intake record & guidelines' },
+      {
+        label: 'Bioresonance Health Testing',
+        href: '/services/health-testing',
+        // desc: 'Remote 6-point Test via hair sample',
+        // formModal: 'health-form',
+        formLabel: 'Health Form',
+      },
+      {
+        label: 'Counselling & Psychotherapy',
+        href: '/services/counselling',
+        // desc: 'Transpersonal & mindful psychological care',
+        // formModal: 'client-consultation',
+        formLabel: 'Client Form',
+      },
+      {
+        label: 'Clinical Hypnotherapy',
+        href: '/services/hypnotherapy',
+        // desc: 'Senior clinical hypnotherapist practice',
+        // formModal: 'client-consultation',
+        formLabel: 'Client Form',
+      },
+      {
+        label: 'Client Health Form',
+        href: '/services/health-form',
+        // desc: 'Confidential intake record & guidelines',
+      },
+      // {
+      //   label: 'Client Form (Counselling & Hypnotherapy)',
+      //   modal: 'client-consultation',
+      //   desc: 'Confidential client consultation form for Mind Therapies',
+      // },
+      // {
+      //   label: 'Bioresonance Health Form',
+      //   href: '/services/health-form',
+      //   modal: 'health-form',
+      //   desc: 'Intake form strictly for Bioresonance Health Testing',
+      // },
     ],
   },
   {
     label: 'Practitioner Training',
     href: '/training',
     dropdown: [
-      { label: 'Training Courses & Syllabus', href: '/training', desc: 'Part 1, Part 2, Combined & Refresher' },
-      { label: 'Practitioner Registration', href: '/training/registration', desc: 'Application form & prerequisites' },
-      { label: 'Bioresonance Devices (SCOPE, MARS & Scope Q)', href: '/training/devices', desc: 'Professional diagnostic & therapy equipment' },
-      { label: 'Training Handbook & Publication', href: '/training/handbook', desc: 'Food sensitivity testing reference guide' },
+      { label: 'Training Courses & Syllabus', href: '/training', 
+        // desc: 'Part 1, Part 2, Combined & Refresher'
+       },
+      { label: 'Practitioner Registration', href: '/training/registration',
+        // desc: 'Application form & prerequisites' 
+      },
+      { label: 'Bioresonance Devices (SCOPE, MARS & Scope Q)', href: '/training/devices',
+        //  desc: 'Professional diagnostic & therapy equipment'
+         },
+      { label: 'Training Handbook & Publication', href: '/training/handbook', 
+        // desc: 'Food sensitivity testing reference guide' 
+      },
     ],
   },
   {

@@ -34,7 +34,7 @@ export default function ClientFormModal({ concept = 'a' }) {
   const { activeModal, closeModal } = useRouter()
 
   const isConceptA = concept === 'a'
-  const modalOpen = activeModal === 'client-consultation'
+  const modalOpen = activeModal === 'client-consultation' || activeModal === 'client-form'
 
   const [formData, setFormData] = useState(initialFormData)
   const [errors, setErrors] = useState({})
@@ -353,6 +353,7 @@ export default function ClientFormModal({ concept = 'a' }) {
                   color: textColor,
                 }}
               >
+                {/* Psychological and Clinical Hypnotherapy Client/Patient Questionnaire */}
                 Julie Langton Smith - Client Form
               </h2>
             </div>
@@ -723,7 +724,7 @@ export default function ClientFormModal({ concept = 'a' }) {
                   boxShadow: '0 4px 14px rgba(0,0,0,0.18)',
                 }}
               >
-                Validate Client Form
+                Submit Psychotherapy/Hypnotherapy Client Form
               </button>
             </div>
 

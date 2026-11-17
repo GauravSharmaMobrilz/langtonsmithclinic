@@ -4,6 +4,7 @@ import SiteHeader from './components/layout/SiteHeader.jsx'
 import SiteFooter from './components/layout/SiteFooter.jsx'
 import RegistrationModal from './components/modals/RegistrationModal.jsx'
 import HealthModal from './components/modals/HealthModal.jsx'
+import ClientFormModal from './components/modals/ClientFormModal.jsx'
 
 // Dedicated Pages for Every Navigation Item
 import HomePage from './pages/HomePage.jsx'
@@ -151,10 +152,10 @@ function MainApp() {
           )}
         </div>
       </aside> */}
-<DesignDirectionBar
-  activeConcept={activeConcept}
-  setActiveConcept={setActiveConcept}
-/>
+      <DesignDirectionBar
+        activeConcept={activeConcept}
+        setActiveConcept={setActiveConcept}
+      />
       {/* ─── SITE CONTAINER (Scoped under .ls-mock-root) ────────────────────────── */}
       <div
         className="ls-mock-root"
@@ -166,7 +167,7 @@ function MainApp() {
         }}
       >
         <SiteHeader concept={activeConcept} />
-        <main id="main-content" className='tw-mt-16 sm:tw-mt-12 lg:tw-mt-[76px]' style={{ flex: 1}}>
+        <main id="main-content" className='tw-mt-16 sm:tw-mt-12 lg:tw-mt-[76px]' style={{ flex: 1 }}>
           {renderCurrentPage()}
         </main>
         <SiteFooter concept={activeConcept} />
@@ -175,6 +176,7 @@ function MainApp() {
       {/* ─── MODAL DIALOGS (Accessible from anywhere) ─────────────────────────── */}
       <RegistrationModal concept={activeConcept} />
       <HealthModal concept={activeConcept} />
+      <ClientFormModal concept={activeConcept} />
     </>
   )
 }

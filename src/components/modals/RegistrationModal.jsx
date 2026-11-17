@@ -156,7 +156,7 @@ export default function RegistrationModal({ concept = 'a' }) {
                   color: textColor,
                 }}
               >
-                Course Booking Form
+                Practitioner Course Registration
               </h2>
             </div>
           </div>
@@ -525,7 +525,7 @@ export default function RegistrationModal({ concept = 'a' }) {
                     boxShadow: '0 4px 14px rgba(0,0,0,0.18)',
                   }}
                 >
-                  {isSubmitting ? 'Submitting Form...' : 'Submit Course Booking Form'}
+                  {isSubmitting ? 'Submitting Registration...' : 'Submit Practitioner Course Registration'}
                 </button>
               </div>
             </form>

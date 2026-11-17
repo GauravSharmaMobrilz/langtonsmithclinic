@@ -61,7 +61,7 @@ export default function RegistrationPage({ concept = 'a' }) {
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Button onClick={() => openModal('registration')} variant="primary" concept={concept}>
-                ⚡ Open Practitioner Registration Modal
+                Practitioner Course Registration
               </Button>
             </div>
           </div>

@@ -161,7 +161,7 @@ export default function HealthModal({ concept = 'a' }) {
                   color: textColor,
                 }}
               >
-                LangtonSmith Clinic Health Form
+                Bioresonance Health Form
               </h2>
             </div>
           </div>
@@ -599,7 +599,7 @@ export default function HealthModal({ concept = 'a' }) {
                     boxShadow: '0 4px 14px rgba(0,0,0,0.18)',
                   }}
                 >
-                  {isSubmitting ? 'Submitting Record...' : 'Submit Health Intake Record'}
+                  {isSubmitting ? 'Submitting Form...' : 'Submit Bioresonance Health Form'}
                 </button>
               </div>
             </form>

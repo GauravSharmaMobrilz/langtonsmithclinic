@@ -25,7 +25,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
     },
     {
       num: '02',
-      title: 'Body Systems Analysis',
+      title: 'Body Systems Assessment',
       desc: 'Evaluates general functioning across 11 key anatomical areas: structural, muscular, heart & circulation, lymph, digestive, neurological, reproductive, liver, endocrine, kidneys/bladder, and teeth/sensory organs.',
     },
     {
@@ -104,7 +104,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
 
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Button onClick={() => openModal('health-form')} variant="primary" concept={concept}>
-                  Complete Client Health Form
+                  Complete Bioresonance Health Form
                 </Button>
                 <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
                   Enquire with Julie
@@ -124,7 +124,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
                 }}
               >
                 <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: accentColor, marginBottom: '8px' }}>
-                  Authoritative SOW Service Rate
+                  Bioresonance Health Testing Fee
                 </div>
                 <div
                   style={{
@@ -144,8 +144,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
 
                 <div style={{ borderTop: `1px solid ${borderColor}`, paddingTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px' }}>
                   <div>📍 <strong>Testing Format:</strong> 100% Remote (No clinic visit needed)</div>
-                  <div>⏳ <strong>Turnaround:</strong> 7 to 10 working days</div>
-                  <div>🔬 <strong>Method:</strong> Hair sample frequency scanning</div>
+                  <div>🔬 <strong>Method:</strong> Bioresonance/Biofeedback Testing</div>
                 </div>
               </div>
             </div>
@@ -277,7 +276,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
           }}
         >
           <strong style={{ color: headingColor }}>Professional Disclaimer: </strong> 
-          Please Note that this is complementary medicine and does not form part of any conventional medical process. Julie Langton-Smith has been since 1997 as a nutritional healthcare practitioner specialising in BioResonance/BioFeedback Therapy that is based on a bioresonance scanning device that Julie is fully qualified and trained in using. Many patients like this therapy as they have found it helpful, non invasive and allows them to feel that they have some control over looking after their own health naturally. However, if you are unsure of your health in any way or suffering any serious health condition it is always recommended that you seek medical advice from your GP.
+          Please Note that this is complementary medicine and does not form part of any conventional medical process. <mark style={{ background: '#FEF08A', color: '#1F303A', padding: '2px 4px', borderRadius: '4px' }}>Julie Langton-Smith has been practicing since 1997</mark> as a nutritional healthcare practitioner specialising in BioResonance/BioFeedback Therapy that is based on a bioresonance scanning device that Julie is fully qualified and trained in using. Many patients like this therapy as they have found it helpful, non invasive and allows them to feel that they have some control over looking after their own health naturally. However, if you are unsure of your health in any way or suffering any serious health condition it is always recommended that you seek medical advice from your GP.
         </div>
       </section>
     </div>

@@ -150,7 +150,26 @@ export default function SiteFooter({ concept = 'a' }) {
                     textDecoration: 'underline',
                   }}
                 >
-                  ⚡ Open Health Intake Modal
+                  ⚡ Open Bioresonance Health Form
+                </button>
+              </li>
+              <li style={{ marginTop: '4px' }}>
+                <button
+                  type="button"
+                  onClick={() => openModal('client-consultation')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    color: isConceptA ? '#C58F75' : '#B99A62',
+                    fontSize: '13px',
+                    fontWeight: 700,
+                    textAlign: 'left',
+                    textDecoration: 'underline',
+                  }}
+                >
+                  ⚡ Open Client Form (Mind Therapies)
                 </button>
               </li>
             </ul>
@@ -205,7 +224,7 @@ export default function SiteFooter({ concept = 'a' }) {
                     textDecoration: 'underline',
                   }}
                 >
-                  ⚡ Open Registration Modal
+                  ⚡ Open Practitioner Registration Modal
                 </button>
               </li>
             </ul>

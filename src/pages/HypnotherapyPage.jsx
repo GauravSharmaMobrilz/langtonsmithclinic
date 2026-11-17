@@ -4,7 +4,6 @@ import Breadcrumbs from '../components/common/Breadcrumbs.jsx'
 import Button from '../components/common/Button.jsx'
 import { CONTACT } from '../data/siteContent.js'
 import SleepHypnosisVideo from '../components/common/SleepHypnosisVideo.jsx'
-import ClientFormModal from '../components/modals/ClientFormModal.jsx'
 
 export default function HypnotherapyPage({ concept = 'a' }) {
   const isConceptA = concept === 'a'
@@ -83,12 +82,14 @@ export default function HypnotherapyPage({ concept = 'a' }) {
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Button 
-              onClick={() => openModal('client-consultation')} 
-              variant="primary" concept={concept}>
-                Book Hypnotherapy Sessions
+                onClick={() => openModal('client-consultation')} 
+                variant="primary" 
+                concept={concept}
+              >
+                Submit Psychotherapy/Hypnotherapy Client Form
               </Button>
-              <Button onClick={() => navigate('/services/health-testing')} variant="outline" concept={concept}>
-                Explore Full Health Testing
+              <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
+                Book an Initial Consultation
               </Button>
             </div>
           </div>
@@ -98,7 +99,6 @@ export default function HypnotherapyPage({ concept = 'a' }) {
         </div>
 
       </section>
-<ClientFormModal concept={concept} />
       {/* Main Content */}
       <section style={{ maxWidth: '1280px', margin: '0 auto', padding: '64px 24px' }}>
         {/* Core Principles */}
@@ -149,7 +149,7 @@ export default function HypnotherapyPage({ concept = 'a' }) {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px' }}>
                 <li>📅 <strong>Minimum Course:</strong> Sessions are typically booked in blocks of a minimum of 4 weekly sessions to ensure continuity and best results.</li>
                 <li>📍 <strong>In-Person Location:</strong> 37 Surrey Street, Littlehampton, West Sussex, BN17 5BH.</li>
-                <li>🎧 <strong>Downloadable Audio Guides:</strong> Specialized audio sessions for home reinforcement (including Weight Loss and Stress Reduction).</li>
+                <li>🎧 <strong>Downloadable Audio Guides:</strong> Specialized audio sessions for home reinforcement (including Weight Loss and Stress Reduction). All Hypnotherapy downloads are £4.95 (all prices are quoted in British pounds sterling).</li>
               </ul>
             </div>
           </div>

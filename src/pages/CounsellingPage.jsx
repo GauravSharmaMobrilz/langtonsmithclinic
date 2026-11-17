@@ -6,7 +6,7 @@ import { CONTACT } from '../data/siteContent.js'
 
 export default function CounsellingPage({ concept = 'a' }) {
   const isConceptA = concept === 'a'
-  const { navigate } = useRouter()
+  const { navigate, openModal } = useRouter()
 
   const bg = isConceptA ? '#F6F3ED' : '#FAFAF7'
   const heroBg = isConceptA ? '#FFFFFF' : '#1F303A'
@@ -69,11 +69,11 @@ export default function CounsellingPage({ concept = 'a' }) {
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <Button onClick={() => navigate('/contact')} variant="primary" concept={concept}>
-                Book a Free Initial Consultation
+              <Button onClick={() => openModal('client-consultation')} variant="primary" concept={concept}>
+                Submit Psychotherapy/Hypnotherapy Client Form
               </Button>
-              <Button onClick={() => navigate('/services/hypnotherapy')} variant="outline" concept={concept}>
-                Clinical Hypnotherapy
+              <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
+                Book a Free Initial Consultation
               </Button>
             </div>
           </div>

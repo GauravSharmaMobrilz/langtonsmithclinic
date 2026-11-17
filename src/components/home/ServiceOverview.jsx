@@ -177,7 +177,26 @@ export default function ServiceOverview({ concept = 'a' }) {
                       textDecoration: 'underline',
                     }}
                   >
-                    Intake Form
+                    Bioresonance Health Form ↗
+                  </button>
+                )}
+
+                {(service.id === 'counselling' || service.id === 'hypnotherapy') && (
+                  <button
+                    type="button"
+                    onClick={() => openModal('client-consultation')}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      color: accentColor,
+                      cursor: 'pointer',
+                      textDecoration: 'underline',
+                    }}
+                  >
+                    Client Form ↗
                   </button>
                 )}
               </div>

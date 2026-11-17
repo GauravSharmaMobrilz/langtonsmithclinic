@@ -130,9 +130,9 @@ export default function ContactPage({ concept = 'a' }) {
                 <a href={`mailto:${CONTACT.email}`} style={{ fontSize: '16px', fontWeight: 700, color: headingColor, textDecoration: 'none' }}>
                   {CONTACT.email}
                 </a>
-                <p style={{ fontSize: '12.5px', color: '#666666', margin: '6px 0 0' }}>
-                  Standard mailer destination specified by the SOW.
-                </p>
+                {/* <p style={{ fontSize: '12.5px', color: '#666666', margin: '6px 0 0' }}>
+                  Initial enquiries and consultation requests by email.
+                </p> */}
               </div>
 
               <div style={{ background: cardBg, borderRadius: '12px', padding: '24px', border: `1px solid ${borderColor}` }}>
@@ -142,9 +142,9 @@ export default function ContactPage({ concept = 'a' }) {
                 <a href={`tel:${CONTACT.phone}`} style={{ fontSize: '16px', fontWeight: 700, color: headingColor, textDecoration: 'none' }}>
                   {CONTACT.phone}
                 </a>
-                <p style={{ fontSize: '12.5px', color: '#666666', margin: '6px 0 0' }}>
-                  Calls and initial consultation inquiries.
-                </p>
+                {/* <p style={{ fontSize: '12.5px', color: '#666666', margin: '6px 0 0' }}>
+                  Calls and initial enquiries by telephone or email.
+                </p> */}
               </div>
 
               <div style={{ background: cardBg, borderRadius: '12px', padding: '24px', border: `1px solid ${borderColor}` }}>
@@ -155,27 +155,30 @@ export default function ContactPage({ concept = 'a' }) {
                   {CONTACT.address}<br />
                   United Kingdom
                 </address>
-                <p style={{ fontSize: '12.5px', color: '#666666', margin: '6px 0 0' }}>
+                {/* <p style={{ fontSize: '12.5px', color: '#666666', margin: '6px 0 0' }}>
                   Hair samples for testing should be addressed here.
-                </p>
+                </p> */}
               </div>
 
-              <div style={{ background: cardBg, borderRadius: '12px', padding: '24px', border: `1px solid ${borderColor}` }}>
+              {/* <div style={{ background: cardBg, borderRadius: '12px', padding: '24px', border: `1px solid ${borderColor}` }}>
                 <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: accentColor, marginBottom: '4px' }}>
                   Consultation Availability
                 </div>
                 <div style={{ fontSize: '14px', color: bodyColor }}>{CONTACT.hours}</div>
                 <div style={{ fontSize: '12.5px', color: '#666666', marginTop: '4px' }}>{CONTACT.remoteAvailable}</div>
-              </div>
+              </div> */}
             </div>
 
             {/* Quick Modal Triggers */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <Button onClick={() => openModal('health-form')} variant="outline" concept={concept}>
-                Submit Client Health Intake Form
+              {/* <Button onClick={() => openModal('health-form')} variant="outline" concept={concept}>
+                Bioresonance Health Form
+              </Button> */}
+              <Button onClick={() => openModal('client-consultation')} variant="outline" concept={concept}>
+                Submit Psychotherapy/Hypnotherapy Client Form
               </Button>
               <Button onClick={() => openModal('registration')} variant="ghost" concept={concept}>
-                Submit Practitioner Registration
+                Practitioner Course Registration
               </Button>
             </div>
           </div>
