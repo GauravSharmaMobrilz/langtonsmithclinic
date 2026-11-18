@@ -35,7 +35,7 @@ export default function TermsPoliciesPage({ concept = 'a' }) {
 
           <div style={{ maxWidth: '820px' }}>
             <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: accentColor }}>
-              Legal Framework & Client Policies · SOW Item 13
+              Legal Framework & Client Policies
             </span>
             <h1
               style={{

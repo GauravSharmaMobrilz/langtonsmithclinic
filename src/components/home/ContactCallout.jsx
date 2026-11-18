@@ -60,7 +60,7 @@ export default function ContactCallout({ concept = 'a' }) {
         </p>
 
         {/* Contact details */}
-        <div
+        {/* <div
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -126,27 +126,27 @@ export default function ContactCallout({ concept = 'a' }) {
               {CONTACT.address}
             </address>
           </div>
-        </div>
+        </div> */}
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
-          <Button onClick={() => navigate('/contact')} variant="primary" concept={concept}>
-            Online Contact Page
+          <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
+            Contact Us
           </Button>
-          <Button
+          {/* <Button
             onClick={() => navigate('/services/health-testing')}
             variant="outline"
             concept={concept}
             className="!tw-border-white !tw-text-white hover:!tw-bg-white hover:!tw-text-b-ink"
           >
             Explore Services
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             onClick={() => openModal('registration')}
             variant="secondary"
             concept={concept}
           >
             Practitioner Registration
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

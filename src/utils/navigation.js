@@ -1,6 +1,6 @@
 /**
  * Navigation utilities for the Langton Smith Clinic prototype.
- * Destination labels and routes are drawn from source website hierarchy and SOW.
+ * Destination labels and routes are drawn from source website hierarchy.
  * Every navigation item links to a dedicated page/route.
  */
 

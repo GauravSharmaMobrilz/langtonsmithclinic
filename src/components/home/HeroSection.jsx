@@ -88,7 +88,7 @@ export default function HeroSection({ concept = 'a' }) {
               lineHeight: 1.7,
               color: isConceptA ? '#303832' : '#EEF3F2',
               margin: '0 0 32px',
-              maxWidth: '520px',
+              maxWidth: '650px',
             }}
           >
             Established in 1997 by Julie Langton Smith MSc. A premier complementary health practice offering Transpersonal Psychotherapy, Senior Clinical Hypnotherapy, and Remote Bioresonance Health Testing — alongside accredited practitioner training.
@@ -111,7 +111,7 @@ export default function HeroSection({ concept = 'a' }) {
           </div>
 
           {/* Contact quick links */}
-          <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', paddingTop: '16px', borderTop: isConceptA ? '1px solid rgba(169,187,169,0.4)' : '1px solid rgba(20,84,90,0.5)' }}>
+          {/* <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', paddingTop: '16px', borderTop: isConceptA ? '1px solid rgba(169,187,169,0.4)' : '1px solid rgba(20,84,90,0.5)' }}>
             <a
               href={`tel:${CONTACT.phone}`}
               style={{
@@ -142,7 +142,7 @@ export default function HeroSection({ concept = 'a' }) {
               <span>✉</span>
               <span>{CONTACT.email}</span>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Visual Column */}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from '../../context/RouterContext.jsx'
 import BrandLogo from '../common/BrandLogo.jsx'
-import { FOOTER, CONTACT, BRAND, SOW_PRICES } from '../../data/siteContent.js'
+import { FOOTER, CONTACT, BRAND } from '../../data/siteContent.js'
 
 export default function SiteFooter({ concept = 'a' }) {
   const isConceptA = concept === 'a'
@@ -244,7 +244,7 @@ export default function SiteFooter({ concept = 'a' }) {
           }}
         >
           <p style={{ margin: 0, fontSize: '12px', color: mutedColor }}>
-            © {new Date().getFullYear()} Langton Smith Clinic. All rights reserved.
+            © {new Date().getFullYear()} Mobrilz. Website Under Development. All Rights Reserved.
           </p>
 
           <div style={{ display: 'flex', gap: '20px' }}>
@@ -280,9 +280,9 @@ export default function SiteFooter({ concept = 'a' }) {
             </button>
           </div>
 
-          <p style={{ margin: 0, fontSize: '11px', color: mutedColor, fontStyle: 'italic' }}>
+          {/* <p style={{ margin: 0, fontSize: '11px', color: mutedColor, fontStyle: 'italic' }}>
             Consolidation prototype of langtonsmithclinic.com & bioresonancetraining.com
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

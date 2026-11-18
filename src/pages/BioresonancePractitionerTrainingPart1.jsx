@@ -6,7 +6,7 @@ const EMAIL = "langtonsmithclinic@hotmail.co.uk";
 const Section = ({ number, title, children }) => (
   <section className="tw-border-b tw-border-[var(--training-border)] tw-py-8 last:tw-border-0">
     <div className="tw-flex tw-gap-4">
-      <span className="tw-flex tw-h-9 tw-w-9 tw-flex-shrink-0 tw-items-center tw-justify-center tw-rounded-full tw-bg-[var(--training-soft-accent)] tw-text-sm tw-font-semibold tw-text-[var(--training-heading)]">
+      <span className="tw-flex tw-mt-5 tw-h-9 tw-w-9 tw-flex-shrink-0 tw-items-center tw-justify-center tw-rounded-full tw-bg-[var(--training-soft-accent)] tw-text-sm tw-font-semibold tw-text-[var(--training-heading)]">
         {number}
       </span>
       <div className="tw-min-w-0 tw-flex-1">
@@ -94,7 +94,7 @@ export default function BioresonancePractitionerTrainingPart1({ concept = "a" })
 
             <a
               href={`mailto:${EMAIL}?subject=Bioresonance%20Training%20Enquiry`}
-              className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-[var(--training-on-hero)]/50 tw-px-7 tw-py-3 tw-font-medium tw-text-[var(--training-on-hero)] tw-transition hover:tw-bg-[var(--training-soft)]"
+              className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-[var(--training-on-hero)]/50 tw-px-7 tw-py-3 tw-font-medium tw-text-[var(--training-on-hero)] tw-transition hover:tw-bg-[#14545a]"
             >
               Make an Enquiry
             </a>

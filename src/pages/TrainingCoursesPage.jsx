@@ -2,7 +2,7 @@ import { React, Link } from 'react'
 import { useRouter } from '../context/RouterContext.jsx'
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx'
 import Button from '../components/common/Button.jsx'
-import { TRAINING, SOW_PRICES, CONTACT } from '../data/siteContent.js'
+import { TRAINING, _PRICES, CONTACT } from '../data/siteContent.js'
 //  import {useNavigate} from "react-router-dom";
 
 export default function TrainingCoursesPage({ concept = 'a' }) {
@@ -22,7 +22,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
     {
       part: 'Part 1',
       title: 'Foundational Bioresonance & Food Testing',
-      price: SOW_PRICES.trainingPart1,
+      price: _PRICES.trainingPart1,
       duration: '2-Day Intensive Hands-on or Zoom Cohort',
       topics: [
         'Physics & biophysical principles of electromagnetic radiation and wave fields',
@@ -36,7 +36,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
     {
       part: 'Part 2',
       title: 'Advanced Resonance, Pathogens & Practice Setup',
-      price: SOW_PRICES.trainingPart2,
+      price: _PRICES.trainingPart2,
       duration: '2-Day Advanced Masterclass & Practicum',
       topics: [
         'Advanced differential health assessments and organ system balancing',
@@ -50,7 +50,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
     {
       part: 'Combined',
       title: 'Complete Practitioner Certification Programme',
-      price: SOW_PRICES.trainingCombined,
+      price: _PRICES.trainingCombined,
       duration: 'Full Part 1 + Part 2 Bundle with Guided Case Studies',
       topics: [
         'Comprehensive curriculum encompassing all Part 1 and Part 2 modules',
@@ -63,7 +63,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
     {
       part: 'Refresher',
       title: 'Annual Professional Refresher & Masterclass',
-      price: SOW_PRICES.annualRefresher,
+      price: _PRICES.annualRefresher,
       duration: 'Flexible 1-on-1 Consultation & Technical Update',
       topics: [
         'Updating device databases and software parameters',
@@ -169,7 +169,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
 
       </section>
 
-      {/* Course Options & SOW Tuition Table */}
+      {/* Course Options & Tuition Table */}
       <section style={{ maxWidth: '1280px', margin: '0 auto', padding: '64px 24px' }}>
         <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 48px' }}>
           <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: accentColor }}>

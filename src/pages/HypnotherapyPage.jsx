@@ -61,7 +61,7 @@ export default function HypnotherapyPage({ concept = 'a' }) {
                 marginBottom: '10px',
               }}
             >
-              {/* [SOW] Authoritative exact title */}
+              {/* Authoritative exact title */}
               Fully qualified Senior Clinical Hypnotherapist
             </span>
             <h1

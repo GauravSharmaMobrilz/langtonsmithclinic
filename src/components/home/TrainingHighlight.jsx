@@ -114,9 +114,9 @@ export default function TrainingHighlight({ concept = 'a' }) {
               Open Registration Modal
             </Button>
           </div>
-          <p style={{ fontSize: '12px', color: '#737373', marginTop: '14px', fontStyle: 'italic', lineHeight: 1.5 }}>
-            Online registration modal active. SOW fee amounts are authoritative.
-          </p>
+          {/* <p style={{ fontSize: '12px', color: '#737373', marginTop: '14px', fontStyle: 'italic', lineHeight: 1.5 }}>
+            Online registration modal active. fee amounts are authoritative.
+          </p> */}
         </div>
 
         {/* Pricing panel */}
@@ -130,7 +130,7 @@ export default function TrainingHighlight({ concept = 'a' }) {
               boxShadow: isConceptA ? '0 4px 20px rgba(0,0,0,0.04)' : '0 4px 16px rgba(0,0,0,0.06)',
             }}
           >
-            <div
+            {/* <div
               style={{
                 fontSize: '11px',
                 fontWeight: 700,
@@ -140,8 +140,8 @@ export default function TrainingHighlight({ concept = 'a' }) {
                 marginBottom: '8px',
               }}
             >
-              Authoritative SOW Investment
-            </div>
+              Authoritative Investment
+            </div> */}
             <h3
               style={{
                 fontFamily: isConceptA ? "'Cormorant Garamond', Georgia, serif" : "'Manrope', Inter, sans-serif",
@@ -169,7 +169,7 @@ export default function TrainingHighlight({ concept = 'a' }) {
                   }}
                 >
                   <span style={{ fontSize: '13.5px', color: moduleColor, fontWeight: 500 }}>
-                    {/* [SOW] price labels */}
+                    {/* price labels */}
                     {price.label}
                   </span>
                   <span
@@ -180,14 +180,14 @@ export default function TrainingHighlight({ concept = 'a' }) {
                       fontFamily: isConceptA ? "'Inter', sans-serif" : "'Manrope', sans-serif",
                     }}
                   >
-                    {/* [SOW] authoritative price — do not modify */}
+                    {/* authoritative price — do not modify */}
                     {price.amount}
                   </span>
                 </div>
               ))}
             </div>
 
-            <div
+            {/* <div
               style={{
                 marginTop: '20px',
                 paddingTop: '16px',
@@ -197,8 +197,8 @@ export default function TrainingHighlight({ concept = 'a' }) {
                 lineHeight: 1.5,
               }}
             >
-              Standard inquiry email destination: <strong style={{ color: priceHeadingColor }}>langtonsmithclinic@hotmail.co.uk</strong>. Direct online payment gateway/checkout is out of scope per SOW.
-            </div>
+              Standard inquiry email destination: <strong style={{ color: priceHeadingColor }}>langtonsmithclinic@hotmail.co.uk</strong>. Direct online payment gateway/checkout is out of scope.
+            </div> */}
           </div>
         </div>
       </div>

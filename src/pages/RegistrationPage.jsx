@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from '../context/RouterContext.jsx'
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx'
 import Button from '../components/common/Button.jsx'
-import { SOW_PRICES, CONTACT } from '../data/siteContent.js'
+import { _PRICES, CONTACT } from '../data/siteContent.js'
 
 export default function RegistrationPage({ concept = 'a' }) {
   const isConceptA = concept === 'a'
@@ -41,7 +41,7 @@ export default function RegistrationPage({ concept = 'a' }) {
 
           <div style={{ maxWidth: '820px' }}>
             <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: accentColor }}>
-              Accredited Enrollment · SOW Item 4
+              Accredited Enrollment
             </span>
             <h1
               style={{
@@ -87,7 +87,7 @@ export default function RegistrationPage({ concept = 'a' }) {
               Investment Rates
             </h3>
             <p style={{ fontSize: '14px', lineHeight: 1.7, color: bodyColor }}>
-              Part 1: <strong>{SOW_PRICES.trainingPart1}</strong> · Part 2: <strong>{SOW_PRICES.trainingPart2}</strong> · Combined: <strong>{SOW_PRICES.trainingCombined}</strong> · Refresher: <strong>{SOW_PRICES.annualRefresher}</strong>. Invoices are settled via direct bank transfer (BACS).
+              Part 1: <strong>{_PRICES.trainingPart1}</strong> · Part 2: <strong>{_PRICES.trainingPart2}</strong> · Combined: <strong>{_PRICES.trainingCombined}</strong> · Refresher: <strong>{_PRICES.annualRefresher}</strong>. Invoices are settled via direct bank transfer (BACS).
             </p>
           </div>
 

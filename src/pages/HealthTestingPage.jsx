@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from '../context/RouterContext.jsx'
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx'
 import Button from '../components/common/Button.jsx'
-import { SOW_PRICES, CONTACT } from '../data/siteContent.js'
+import { _PRICES, CONTACT } from '../data/siteContent.js'
 import FullHealthTestSection from '../components/common/FullHealthTestSection.jsx'
 
 export default function HealthTestingPage({ concept = 'a' }) {
@@ -136,7 +136,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
                     marginBottom: '16px',
                   }}
                 >
-                  {SOW_PRICES.fullHealthTesting}
+                  {_PRICES.fullHealthTesting}
                 </div>
                 <p style={{ fontSize: '13.5px', lineHeight: 1.6, color: bodyColor, margin: '0 0 20px' }}>
                   Includes the complete 6-part biofeedback test, written diagnostic report emailed within 7–10 working days, and a personal telephone consultation with Julie Langton Smith MSc.

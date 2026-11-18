@@ -31,8 +31,8 @@ export default function Button({
     b: {
       primary:   'tw-bg-b-teal tw-text-white tw-px-6 tw-py-3 tw-rounded-lg hover:tw-opacity-90 tw-text-sm tw-font-semibold tw-tracking-wide',
       secondary: 'tw-bg-b-brass tw-text-b-ink tw-px-6 tw-py-3 tw-rounded-lg hover:tw-opacity-90 tw-text-sm',
-      outline:   'tw-bg-transparent tw-text-b-teal tw-border-2 tw-border-b-teal tw-px-6 tw-py-3 tw-rounded-lg hover:tw-bg-b-teal hover:tw-text-white tw-text-sm',
-      ghost:     'tw-bg-transparent tw-text-b-teal tw-px-4 tw-py-2 tw-rounded-md hover:tw-bg-b-mist tw-text-sm',
+      outline:   'tw-bg-[#1f303a] tw-text-white tw-border-2 tw-border-b-teal tw-px-6 tw-py-3 tw-rounded-lg hover:tw-bg-b-teal hover:tw-text-white tw-text-sm',
+      ghost:     'tw-bg-b-brass tw-text-teal tw-px-4 tw-py-2 tw-rounded-md hover:tw-bg-b-mist tw-text-sm',
     },
   }
 

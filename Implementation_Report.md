@@ -66,8 +66,8 @@ The project successfully built with zero errors via Vite (`npm run build`).
 - **Original Requirement:** Ensure all Hypnotherapy downloads are priced at exactly £4.95 GBP.
 - **Audit Finding in `Report.md`:** `NOT IMPLEMENTED` (audit reported £5.95 and £12.00 values or missing £4.95 pricing in page listings).
 - **Implementation Details:**
-  1. In `src/data/siteContent.js`: `SOW_PRICES.hypnotherapyDownload` is set to `'£4.95'`.
-  2. In `src/pages/ShopPage.jsx`: line 43 catalog item `Weight Loss Clinical Hypnotherapy Audio` displays `price: SOW_PRICES.hypnotherapyDownload` (`£4.95`).
+  1. In `src/data/siteContent.js`: `_PRICES.hypnotherapyDownload` is set to `'£4.95'`.
+  2. In `src/pages/ShopPage.jsx`: line 43 catalog item `Weight Loss Clinical Hypnotherapy Audio` displays `price: _PRICES.hypnotherapyDownload` (`£4.95`).
   3. In `src/pages/HypnotherapyPage.jsx`: updated line 152 to explicitly state the fixed price:
      `<li>🎧 <strong>Downloadable Audio Guides:</strong> Specialized audio sessions for home reinforcement (including Weight Loss and Stress Reduction). All Hypnotherapy downloads are £4.95 (all prices are quoted in British pounds sterling).</li>`
 - **Status:** `IMPLEMENTED AND VERIFIED`

@@ -75,7 +75,7 @@ export default function ContactPage({ concept = 'a' }) {
 
           <div style={{ maxWidth: '820px' }}>
             <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: accentColor }}>
-              Appointments, Consultations & Training Enquiries · SOW Item 12
+              Appointments, Consultations & Training Enquiries
             </span>
             <h1
               style={{

@@ -124,7 +124,7 @@ export default function FounderIntroduction({ concept = 'a' }) {
                   <span style={{ color: tagColor, flexShrink: 0, marginTop: '2px', fontWeight: 700 }}>
                     —
                   </span>
-                  {/* [CLINIC] verified qualification listing; includes [SOW] updated hypnotherapy title */}
+                  {/* [CLINIC] verified qualification listing; includes updated hypnotherapy title */}
                   <span>{q}</span>
                 </li>
               ))}

@@ -2,11 +2,11 @@
  * siteContent.js — Verified source copy for Langton Smith Clinic homepage prototype.
  *
  * COPY RULES (from implementation-plan.md § 2.2):
- * - All copy is reproduced verbatim from source websites or supplied verbatim by the SOW.
- * - Source is noted in comments on every item: [CLINIC], [TRAINING], or [SOW].
- * - SOW values override older source-site wording where explicitly specified.
+ * - All copy is reproduced verbatim from source websites or supplied verbatim by the.
+ * - Source is noted in comments on every item: [CLINIC], [TRAINING], or .
+ * -  values override older source-site wording where explicitly specified.
  * - No marketing copy, paraphrase, invented claims, or lorem ipsum.
- * - Prices labelled [SOW] are authoritative; do not recalculate or reformat.
+ * - Prices labelled are authoritative; do not recalculate or reformat.
  */
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -29,7 +29,7 @@ export const BRAND = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const CONTACT = {
-  // [SOW] Authoritative inquiry destination
+  // Authoritative inquiry destination
   email: 'langtonsmithclinic@hotmail.co.uk',
 
   // [CLINIC] https://www.langtonsmithclinic.com/terms-policies
@@ -39,11 +39,11 @@ export const CONTACT = {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SOW AUTHORITATIVE PRICES
+//  AUTHORITATIVE PRICES
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const SOW_PRICES = {
-  // [SOW] — Use exactly as stated; do not add tax, payment, or currency-conversion wording
+export const _PRICES = {
+  //  — Use exactly as stated; do not add tax, payment, or currency-conversion wording
   trainingPart1: '£1,250',
   trainingPart2: '£1,500',
   trainingCombined: '£2,650',
@@ -101,7 +101,7 @@ export const SERVICES = [
   {
     id: 'hypnotherapy',
     // [CLINIC] https://www.langtonsmithclinic.com/hypnotherapy
-    // [SOW] Updated title: "Fully qualified Senior Clinical Hypnotherapist"
+    // Updated title: "Fully qualified Senior Clinical Hypnotherapist"
     title: 'Clinical Hypnotherapy',
     titleQualification: 'Fully qualified Senior Clinical Hypnotherapist',
     excerpt: 'Hypnotherapy aims to help clients overcome negative patterns of thought and behaviour by utilising positive suggestions to create subconscious changes.',
@@ -120,10 +120,10 @@ export const SERVICES = [
   {
     id: 'health-Testing',
     // [CLINIC] https://www.langtonsmithclinic.com/full-health-Testing
-    // [SOW] Price: £300
+    //  Price: £300
     title: 'Bioresonance/Biofeedback Clinical Health Testing',
     excerpt: 'A remote, non-invasive health Testing service using a hair sample and medical scanning device to assess energy levels, body systems, food sensitivities, and environmental stressors.',
-    price: '£300', // [SOW]
+    price: '£300', // 
     method: 'Remote — no clinic visit required. Results emailed within 7–10 working days, followed by a personal telephone consultation.',
     sampleRequirements: 'A small sample of hair no larger than the size of a postage stamp, minimum of 10 hairs. Hair can be coloured and does not need to be pulled from the root.',
     sixTests: [
@@ -200,7 +200,7 @@ export const TRAINING = {
     'Collaborating with other health professionals',
   ],
 
-  // [SOW] Authoritative prices
+  // Authoritative prices
   prices: [
     { label: 'Practitioner Training — Part 1', amount: '£1,250' },
     { label: 'Practitioner Training — Part 2', amount: '£1,500' },
@@ -235,7 +235,7 @@ export const FOUNDER = {
     'MSc Transpersonal Psychology and Consciousness Studies (TPACCS) — University of Northampton',
     'Diploma in Psychotherapeutic Counselling',
     'Certificate in Psychotherapeutic Counselling Supervision (BPS Accredited)',
-    // [SOW] Updated title used wherever new title appears
+    // Updated title used wherever new title appears
     'Fully qualified Senior Clinical Hypnotherapist',
     'Qualified Naturopath',
   ],
@@ -376,7 +376,7 @@ export const HANDBOOK = {
   coverImageAlt: 'Cover of Food Sensitivity Testing: The Principles of Bioresonance and Biofeedback Therapy by Julie Langton Smith MSc',
   priceUK: '£19.99', // [CLINIC] includes postage
   priceInternational: '£24.95', // [CLINIC] includes postage
-  orderNote: 'Order by emailing langtonsmithclinic@hotmail.co.uk',
+  // orderNote: 'Order by emailing langtonsmithclinic@hotmail.co.uk',
   orderEmail: 'langtonsmithclinic@hotmail.co.uk',
   href: 'https://bioresonancetraining.com/bioresonance-training-handbook/',
 }
@@ -444,7 +444,7 @@ export const FOOTER = {
     { label: 'Bioresonance Devices', href: '#devices' },
     { label: 'Training Handbook', href: '#handbook' },
   ],
-  copyrightNote: '© Langton Smith Clinic. All rights reserved.',
+  copyrightNote: '© 2026 Mobrilz. Website Under Development. All Rights Reserved.',
   disclaimer: 'This website is a prototype design mock. Content from langtonsmithclinic.com and bioresonancetraining.com is reproduced for design review only.',
 }
 
@@ -452,22 +452,22 @@ export const FOOTER = {
 // CONTENT DEPENDENCIES — PENDING ITEMS (do not invent these)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const PENDING_CONTENT = {
-  registrationFormFields: {
-    status: 'BLOCKED',
-    reason: 'Google Doc inaccessible in prototype environment. No fields invented.',
-    docUrl: 'https://docs.google.com/document/d/1KERq5c1zafcyy_P1Wgc5PzmbjK_UQt9R/edit?usp=share_link',
-    action: 'Request DOCX/PDF export from project owner before implementing form.',
-  },
-  healthFormFields: {
-    status: 'BLOCKED',
-    reason: 'Google Doc inaccessible in prototype environment. No fields invented.',
-    docUrl: 'https://docs.google.com/document/d/11b1fMjNjnVViDw4tdREZOMVIMjoDYwXG/edit?usp=share_link',
-    action: 'Request DOCX/PDF export from project owner before implementing form.',
-  },
-  medicalDisclaimer: {
-    status: 'BLOCKED',
-    reason: 'Exact approved verbatim Professional Medical Disclaimer wording not present in SOW body or accessible source pages.',
-    action: 'Locate the approved disclaimer text or obtain client confirmation before publishing the Clinical Health Testing page.',
-  },
-}
+// export const PENDING_CONTENT = {
+//   registrationFormFields: {
+//     status: 'BLOCKED',
+//     reason: 'Google Doc inaccessible in prototype environment. No fields invented.',
+//     docUrl: 'https://docs.google.com/document/d/1KERq5c1zafcyy_P1Wgc5PzmbjK_UQt9R/edit?usp=share_link',
+//     action: 'Request DOCX/PDF export from project owner before implementing form.',
+//   },
+//   healthFormFields: {
+//     status: 'BLOCKED',
+//     reason: 'Google Doc inaccessible in prototype environment. No fields invented.',
+//     docUrl: 'https://docs.google.com/document/d/11b1fMjNjnVViDw4tdREZOMVIMjoDYwXG/edit?usp=share_link',
+//     action: 'Request DOCX/PDF export from project owner before implementing form.',
+//   },
+//   medicalDisclaimer: {
+//     status: 'BLOCKED',
+//     reason: 'Exact approved verbatim Professional Medical Disclaimer wording not present in body or accessible source pages.',
+//     action: 'Locate the approved disclaimer text or obtain client confirmation before publishing the Clinical Health Testing page.',
+//   },
+// }

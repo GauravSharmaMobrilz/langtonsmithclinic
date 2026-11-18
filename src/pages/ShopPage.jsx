@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from '../context/RouterContext.jsx'
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx'
 import Button from '../components/common/Button.jsx'
-import { HANDBOOK, SOW_PRICES, CONTACT } from '../data/siteContent.js'
+import { HANDBOOK, _PRICES, CONTACT } from '../data/siteContent.js'
 
 export default function ShopPage({ concept = 'a' }) {
   const isConceptA = concept === 'a'
@@ -31,7 +31,7 @@ export default function ShopPage({ concept = 'a' }) {
       category: 'Remote Clinical Testing',
       author: 'Langton Smith Clinic',
       desc: 'Complete 6-part biofeedback test via hair sample, written report within 7–10 working days, and 1-on-1 telephone consultation.',
-      price: SOW_PRICES.fullHealthTesting,
+      price: _PRICES.fullHealthTesting,
       actionText: 'Book / Health Form',
       onAction: () => openModal('health-form'),
     },
@@ -40,7 +40,7 @@ export default function ShopPage({ concept = 'a' }) {
       category: 'Therapeutic Audio Download',
       author: 'Julie Langton Smith MSc',
       desc: 'Professional audio session using subconscious suggestion to eliminate food cravings and support steady, joyful weight reduction.',
-      price: SOW_PRICES.hypnotherapyDownload,
+      price: _PRICES.hypnotherapyDownload,
       actionText: 'Enquire via Email',
       actionHref: `mailto:${CONTACT.email}?subject=Hypnotherapy%20Audio%20Enquiry`,
     },
@@ -49,7 +49,7 @@ export default function ShopPage({ concept = 'a' }) {
       category: 'Accredited Training Course',
       author: 'Bioresonance International',
       desc: '2-Day foundational intensive covering biophysics, SCOPE device operation, and food intolerance scanning.',
-      price: SOW_PRICES.trainingPart1,
+      price: _PRICES.trainingPart1,
       actionText: 'Register Application',
       onAction: () => openModal('registration'),
     },
@@ -58,7 +58,7 @@ export default function ShopPage({ concept = 'a' }) {
       category: 'Accredited Training Course',
       author: 'Bioresonance International',
       desc: 'Advanced 2-day masterclass covering pathogen profiling, remedy copying, remote broadcasting, and practice setup.',
-      price: SOW_PRICES.trainingPart2,
+      price: _PRICES.trainingPart2,
       actionText: 'Register Application',
       onAction: () => openModal('registration'),
     },
@@ -67,7 +67,7 @@ export default function ShopPage({ concept = 'a' }) {
       category: 'Complete Diploma Pathway',
       author: 'Bioresonance International',
       desc: 'Full Part 1 + Part 2 curriculum with personal mentorship from Julie Langton Smith and supervised clinical case studies.',
-      price: SOW_PRICES.trainingCombined,
+      price: _PRICES.trainingCombined,
       actionText: 'Register Application',
       onAction: () => openModal('registration'),
     },
@@ -95,7 +95,7 @@ export default function ShopPage({ concept = 'a' }) {
 
           <div style={{ maxWidth: '820px' }}>
             <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: accentColor }}>
-              Inquiry-Based Product Catalog · SOW Item 10
+              Inquiry-Based Product Catalog 
             </span>
             <h1
               style={{
@@ -110,10 +110,10 @@ export default function ShopPage({ concept = 'a' }) {
               Publications, Testing Services & Training Catalog
             </h1>
             <p style={{ fontSize: '17px', lineHeight: 1.7, color: isConceptA ? '#303832' : '#EEF3F2', margin: '0 0 24px' }}>
-              Order authoritative publications, schedule remote health testing kits, and apply for accredited practitioner training. In accordance with the SOW, this catalog is direct-inquiry based (no online cart or payment gateway).
+              Order authoritative publications, schedule remote health testing kits, and apply for accredited practitioner training.
             </p>
 
-            <div
+            {/* <div
               style={{
                 background: isConceptA ? 'rgba(47,81,71,0.06)' : 'rgba(20,84,90,0.2)',
                 border: `1px solid ${borderColor}`,
@@ -125,7 +125,7 @@ export default function ShopPage({ concept = 'a' }) {
               }}
             >
               ℹ️ Direct merchant checkout is not offered. Orders are confirmed personally by Julie via email: <strong>{CONTACT.email}</strong>.
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

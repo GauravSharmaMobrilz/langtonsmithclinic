@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from '../../context/RouterContext.jsx'
 import BrandLogo from '../common/BrandLogo.jsx'
-import { SOW_PRICES, CONTACT } from '../../data/siteContent.js'
+import { CONTACT } from '../../data/siteContent.js'
 
 export default function HealthModal({ concept = 'a' }) {
   const { activeModal, closeModal } = useRouter()

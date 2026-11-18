@@ -25,7 +25,7 @@ import BioresonancePractitionerTrainingPart1 from './pages/BioresonancePractitio
 import BioresonancePractitionerTrainingPart2 from './pages/BioresonancePractitionerTrainingPart2.jsx'
 
 function MainApp() {
-  const [activeConcept, setActiveConcept] = useState('a') // 'a' (Clinical Wellness Light) | 'b' (Modern Editorial Dark)
+  const [activeConcept, setActiveConcept] = useState('b') // 'a' (Clinical Wellness Light) | 'b' (Modern Editorial Dark)
   const { currentPath } = useRouter()
 
   // Route mapping — every primary & sub-navigation item has its own dedicated page
@@ -152,10 +152,12 @@ function MainApp() {
           )}
         </div>
       </aside> */}
-      <DesignDirectionBar
+
+      {/* <DesignDirectionBar
         activeConcept={activeConcept}
         setActiveConcept={setActiveConcept}
-      />
+      /> */}
+      
       {/* ─── SITE CONTAINER (Scoped under .ls-mock-root) ────────────────────────── */}
       <div
         className="ls-mock-root"

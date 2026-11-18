@@ -31,7 +31,7 @@ export default function SectionHeading({
         className={`tw-m-0 tw-leading-tight tw-mb-4 ${
           isConceptA
             ? 'tw-font-serif tw-text-a-green tw-text-3xl lg:tw-text-4xl'
-            : 'tw-font-manrope tw-text-b-ink tw-text-3xl lg:tw-text-4xl tw-font-bold'
+            : 'tw-font-manrope tw-text-b-link tw-text-3xl lg:tw-text-4xl tw-font-bold'
         }`}
       >
         {heading}

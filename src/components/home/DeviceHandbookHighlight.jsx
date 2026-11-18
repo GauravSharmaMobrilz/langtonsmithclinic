@@ -25,10 +25,12 @@ export default function DeviceHandbookHighlight({ concept = 'a' }) {
       <SectionHeading
         label="Devices & Publications"
         heading="Technology & Training Resources"
-        subheading="Professional bioresonance devices and educational reference publications."
+        // subheading="Professional bioresonance devices and educational reference publications."
         concept={concept}
-        className="tw-mb-12 reveal-on-scroll"
+        className=" reveal-on-scroll tw-text-white"
       />
+        <p className={`tw-mb-12 tw-text-center tw-mx-auto tw-leading-relaxed tw-text-b-graphite/80 tw-text-white`}>
+          Professional bioresonance devices and educational reference publications.</p>
 
       {/* Devices Grid */}
       <div

@@ -146,7 +146,7 @@ export default function DevicesPage({ concept = 'a' }) {
                 marginBottom: '10px',
               }}
             >
-              Hardware & Clinical Technology · SOW Item 5
+              Hardware & Clinical Technology
             </span>
             <h1
               style={{

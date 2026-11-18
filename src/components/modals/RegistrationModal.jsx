@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from '../../context/RouterContext.jsx'
 import BrandLogo from '../common/BrandLogo.jsx'
-import { SOW_PRICES, CONTACT } from '../../data/siteContent.js'
+import { _PRICES, CONTACT } from '../../data/siteContent.js'
 
 export default function RegistrationModal({ concept = 'a' }) {
   const { activeModal, closeModal } = useRouter()
@@ -189,7 +189,7 @@ export default function RegistrationModal({ concept = 'a' }) {
           {step === 1 ? (
             <form onSubmit={handleSubmit} noValidate>
               {submissionMessage && <div role="status" aria-live="polite" style={{ marginBottom: 18, padding: 14, borderRadius: 8, border: `1px solid ${highlightColor}`, background: isConceptA ? '#FFF8F1' : '#14232C', color: textColor, fontSize: 13.5, lineHeight: 1.55 }}>{submissionMessage}</div>}
-              <div
+              {/* <div
                 style={{
                   background: isConceptA ? '#F6F3ED' : '#14232C',
                   border: `1px solid ${borderColor}`,
@@ -201,8 +201,8 @@ export default function RegistrationModal({ concept = 'a' }) {
                   fontStyle: 'italic',
                 }}
               >
-                Please complete what you can clearly. Authoritative SOW Investment Rates: Part 1: {SOW_PRICES.trainingPart1} | Part 2: {SOW_PRICES.trainingPart2} | Combined: {SOW_PRICES.trainingCombined} | Annual Refresher: {SOW_PRICES.annualRefresher}. Return destination: {CONTACT.email}.
-              </div>
+                Please complete what you can clearly. Authoritative Investment Rates: Part 1: {_PRICES.trainingPart1} | Part 2: {_PRICES.trainingPart2} | Combined: {_PRICES.trainingCombined} | Annual Refresher: {_PRICES.annualRefresher}. Return destination: {CONTACT.email}.
+              </div> */}
 
               {/* Page 1 Fields */}
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: textColor, margin: '0 0 16px', borderBottom: `1px solid ${borderColor}`, paddingBottom: '8px' }}>
@@ -436,10 +436,10 @@ export default function RegistrationModal({ concept = 'a' }) {
                   onChange={(e) => setFormData({ ...formData, specificCourse: e.target.value })}
                   style={{ width: '100%', padding: '10px 12px', background: inputBg, border: `1px solid ${borderColor}`, borderRadius: '6px', color: textColor, fontSize: '14px' }}
                 >
-                  <option>Part 1 — Foundational ({SOW_PRICES.trainingPart1})</option>
-                  <option>Part 2 — Advanced Masterclass ({SOW_PRICES.trainingPart2})</option>
-                  <option>Combined — Complete Certification ({SOW_PRICES.trainingCombined})</option>
-                  <option>Annual Refresher ({SOW_PRICES.annualRefresher})</option>
+                  <option>Part 1 — Foundational ({_PRICES.trainingPart1})</option>
+                  <option>Part 2 — Advanced Masterclass ({_PRICES.trainingPart2})</option>
+                  <option>Combined — Complete Certification ({_PRICES.trainingCombined})</option>
+                  <option>Annual Refresher ({_PRICES.annualRefresher})</option>
                 </select>
               </div>
 
@@ -488,9 +488,9 @@ export default function RegistrationModal({ concept = 'a' }) {
                 </div>
               </div>
 
-              <div style={{ fontSize: '12px', color: subtextColor, marginBottom: '24px' }}>
+              {/* <div style={{ fontSize: '12px', color: subtextColor, marginBottom: '24px' }}>
                 Return this form to <strong>{CONTACT.email}</strong> · Copyright Julie Langton Smith 2025
-              </div>
+              </div> */}
 
               {/* Submit Buttons */}
               <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', borderTop: `1px solid ${borderColor}`, paddingTop: '20px' }}>

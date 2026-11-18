@@ -61,7 +61,7 @@ export default function HandbookPage({ concept = 'a' }) {
           >
             <div>
               <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: accentColor }}>
-                Authoritative Literature & Training Manual · SOW Item 6
+                Authoritative Literature & Training Manual
               </span>
               <h1
                 style={{

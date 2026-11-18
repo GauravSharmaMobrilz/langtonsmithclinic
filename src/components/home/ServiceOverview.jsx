@@ -91,7 +91,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                 {service.title}
               </h3>
 
-              {/* SOW updated title */}
+              {/* updated title */}
               {service.id === 'hypnotherapy' && (
                 <span
                   style={{
@@ -122,7 +122,7 @@ export default function ServiceOverview({ concept = 'a' }) {
               </p>
 
               {/* Price for health Testing */}
-              {service.price && (
+              {/* {service.price && (
                 <div
                   style={{
                     display: 'inline-flex',
@@ -140,7 +140,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                 >
                   {service.price} · Remote Testing
                 </div>
-              )}
+              )} */}
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: `1px solid ${cardBorder}`, paddingTop: '16px' }}>
                 <button
@@ -159,7 +159,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                     gap: '6px',
                   }}
                 >
-                  View full service details →
+                  View more →
                 </button>
 
                 {service.id === 'health-Testing' && (
