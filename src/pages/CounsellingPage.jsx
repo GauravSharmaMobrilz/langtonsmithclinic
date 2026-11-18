@@ -50,7 +50,8 @@ export default function CounsellingPage({ concept = 'a' }) {
 
           <div style={{ maxWidth: '820px' }}>
             <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: accentColor }}>
-              MSc Transpersonal Psychology · NCPS & BPS Accredited
+              MSc Transpersonal Psychology 
+              {/* · NCPS & BPS Accredited */}
             </span>
             <h1
               style={{
@@ -70,7 +71,7 @@ export default function CounsellingPage({ concept = 'a' }) {
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Button onClick={() => openModal('client-consultation')} variant="primary" concept={concept}>
-                Submit Psychotherapy/Hypnotherapy Client Form
+                Client Questionnaire
               </Button>
               <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
                 Book a Free Initial Consultation
@@ -131,7 +132,7 @@ export default function CounsellingPage({ concept = 'a' }) {
                 <li>✨ <strong>Free Initial Consultation:</strong> An introductory conversation to explore your needs before committing to a block of sessions.</li>
                 <li>⏱ <strong>Session Duration:</strong> Standard consultations last 50 to 60 minutes.</li>
                 <li>📅 <strong>Course Structure:</strong> Typically scheduled as a course of 4 to 6 weekly or bi-weekly sessions for lasting change.</li>
-                <li>🌐 <strong>Delivery Formats:</strong> In-person at the Littlehampton clinic, or remote worldwide via Zoom, Skype, or telephone.</li>
+                <li>🌐 <strong>Delivery Formats:</strong> In-person at the Littlehampton clinic, or remote worldwide via Zoom, or telephone.</li>
               </ul>
             </div>
           </div>

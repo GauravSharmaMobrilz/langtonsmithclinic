@@ -78,10 +78,10 @@ export default function TermsPoliciesPage({ concept = 'a' }) {
               2. Fees & Payment Methods
             </h2>
             <p style={{ fontSize: '14.5px', lineHeight: 1.7, margin: '0 0 12px' }}>
-              Therapy and health testing fees are communicated clearly prior to your appointment. In accordance with clinic guidelines, payment is accepted via direct bank transfer (BACS) or cash. Online merchant payment gateways or third-party card processors are intentionally not utilized on this web platform.
+              Therapy and health testing fees are communicated clearly prior to your appointment. In accordance with clinic guidelines, payment is accepted via direct bank transfer (BACS) or cash. 
             </p>
             <p style={{ fontSize: '14.5px', lineHeight: 1.7, margin: 0 }}>
-              For remote Bioresonance Clinical Health Testing (£300), payment must be cleared prior to dispatch of results and the personal telephone review.
+              Payment due on invoice prior to any treatment or therapy
             </p>
           </div>
 

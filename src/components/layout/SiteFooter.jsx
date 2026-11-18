@@ -150,7 +150,7 @@ export default function SiteFooter({ concept = 'a' }) {
                     textDecoration: 'underline',
                   }}
                 >
-                  ⚡ Open Bioresonance Health Form
+                  ⚡ Open Client Health Form
                 </button>
               </li>
               <li style={{ marginTop: '4px' }}>
@@ -169,7 +169,7 @@ export default function SiteFooter({ concept = 'a' }) {
                     textDecoration: 'underline',
                   }}
                 >
-                  ⚡ Open Client Form (Mind Therapies)
+                  ⚡ Open Client Questionnaire
                 </button>
               </li>
             </ul>
@@ -224,7 +224,7 @@ export default function SiteFooter({ concept = 'a' }) {
                     textDecoration: 'underline',
                   }}
                 >
-                  ⚡ Open Practitioner Registration Modal
+                  ⚡ Open Practitioner Registration Form
                 </button>
               </li>
             </ul>

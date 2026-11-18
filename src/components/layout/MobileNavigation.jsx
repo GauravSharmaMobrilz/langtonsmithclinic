@@ -215,7 +215,7 @@ export default function MobileNavigation({ concept = 'a', isOpen, onClose }) {
             cursor: 'pointer',
           }}
         >
-          Bioresonance Health Form (Health Test)
+          Client Health form
         </button>
 
         <button

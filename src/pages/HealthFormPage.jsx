@@ -53,17 +53,17 @@ export default function HealthFormPage({ concept = 'a' }) {
                 margin: '8px 0 20px',
               }}
             >
-              Bioresonance Health Form & Intake Procedure
+              Client Health Intake & Assessment Form
             </h1>
             <p style={{ fontSize: '17px', lineHeight: 1.7, color: isConceptA ? '#303832' : '#EEF3F2', margin: '0 0 28px' }}>
               Complete your pre-consultation health history, symptom inventory, and hair sample protocol. All health information is handled under strict practitioner confidentiality.
             </p>
 
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            {/* <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Button onClick={() => openModal('health-form')} variant="primary" concept={concept}>
-                ⚡ Open Bioresonance Health Form
+                ⚡ Open Client Health Form
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -107,7 +107,7 @@ export default function HealthFormPage({ concept = 'a' }) {
               3. Privacy & Discretion
             </h3>
             <p style={{ fontSize: '14px', lineHeight: 1.7, color: bodyColor }}>
-              Your data is accessed strictly by Julie Langton Smith MSc in accordance with UK Data Protection and NCPS/BPS ethical standards. No data is stored in unencrypted public databases.
+              Your data is accessed strictly by Julie Langton Smith MSc in accordance with UK Data Protection ethical standards. No data is stored in unencrypted public databases.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function HealthFormPage({ concept = 'a' }) {
             concept={concept}
             className="!tw-bg-white !tw-text-b-ink hover:!tw-opacity-90"
           >
-            Launch Health Intake Form Modal
+             Client Health Form
           </Button>
         </div>
       </section>

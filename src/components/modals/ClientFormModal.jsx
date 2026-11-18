@@ -354,7 +354,7 @@ export default function ClientFormModal({ concept = 'a' }) {
                 }}
               >
                 {/* Psychological and Clinical Hypnotherapy Client/Patient Questionnaire */}
-                Julie Langton Smith - Client Form
+                Client Questionnaire
               </h2>
             </div>
           </div>
@@ -724,7 +724,7 @@ export default function ClientFormModal({ concept = 'a' }) {
                   boxShadow: '0 4px 14px rgba(0,0,0,0.18)',
                 }}
               >
-                Submit Psychotherapy/Hypnotherapy Client Form
+                Submit
               </button>
             </div>
 

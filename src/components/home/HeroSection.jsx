@@ -105,9 +105,9 @@ export default function HeroSection({ concept = 'a' }) {
             {/* <Button onClick={() => openModal('health-form')} variant="ghost" concept={concept}>
               Bioresonance Health Form →
             </Button> */}
-            <Button onClick={() => openModal('client-consultation')} variant="ghost" concept={concept}>
-              Client Form →
-            </Button>
+            {/* <Button onClick={() => openModal('client-consultation')} variant="ghost" concept={concept}>
+              Client Questionnaire
+            </Button> */}
           </div>
 
           {/* Contact quick links */}

@@ -104,7 +104,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
 
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Button onClick={() => openModal('health-form')} variant="primary" concept={concept}>
-                  Complete Bioresonance Health Form
+                  Client Health Form
                 </Button>
                 <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
                   Enquire with Julie
@@ -139,7 +139,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
                   {_PRICES.fullHealthTesting}
                 </div>
                 <p style={{ fontSize: '13.5px', lineHeight: 1.6, color: bodyColor, margin: '0 0 20px' }}>
-                  Includes the complete 6-part biofeedback test, written diagnostic report emailed within 7–10 working days, and a personal telephone consultation with Julie Langton Smith MSc.
+                  Includes the complete 6-part biofeedback test, written assessment report emailed within 7–10 working days, and a personal telephone consultation with Julie Langton Smith MSc.
                 </p>
 
                 <div style={{ borderTop: `1px solid ${borderColor}`, paddingTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px' }}>
@@ -259,7 +259,7 @@ export default function HealthTestingPage({ concept = 'a' }) {
             </div>
 
             <Button onClick={() => openModal('health-form')} variant="primary" concept={concept}>
-              Submit Health Intake & Begin Testing
+              Client Health Form
             </Button>
           </div>
         </div>

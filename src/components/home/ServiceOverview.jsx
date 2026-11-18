@@ -177,7 +177,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                       textDecoration: 'underline',
                     }}
                   >
-                    Bioresonance Health Form ↗
+                    Client Health form ↗
                   </button>
                 )}
 
@@ -196,7 +196,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                       textDecoration: 'underline',
                     }}
                   >
-                    Client Form ↗
+                    Client Questionnaire ↗
                   </button>
                 )}
               </div>

@@ -86,7 +86,7 @@ export default function HypnotherapyPage({ concept = 'a' }) {
                 variant="primary" 
                 concept={concept}
               >
-                Submit Psychotherapy/Hypnotherapy Client Form
+                Client Questionnaire
               </Button>
               <Button onClick={() => navigate('/contact')} variant="outline" concept={concept}>
                 Book an Initial Consultation

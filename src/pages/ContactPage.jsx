@@ -175,7 +175,7 @@ export default function ContactPage({ concept = 'a' }) {
                 Bioresonance Health Form
               </Button> */}
               <Button onClick={() => openModal('client-consultation')} variant="outline" concept={concept}>
-                Submit Psychotherapy/Hypnotherapy Client Form
+                Client Questionnaire
               </Button>
               <Button onClick={() => openModal('registration')} variant="ghost" concept={concept}>
                 Practitioner Course Registration
