@@ -153,7 +153,7 @@ export default function SiteFooter({ concept = 'a' }) {
                   ⚡ Open Bioresonance Health Form
                 </button>
               </li>
-              <li style={{ marginTop: '4px' }}>
+              {/* <li style={{ marginTop: '4px' }}>
                 <button
                   type="button"
                   onClick={() => openModal('client-consultation')}
@@ -171,7 +171,7 @@ export default function SiteFooter({ concept = 'a' }) {
                 >
                   ⚡ Open Client Questionnaire
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 
