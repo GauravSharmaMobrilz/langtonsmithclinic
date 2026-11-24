@@ -23,7 +23,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
       part: 'Part 1',
       title: 'Foundational Bioresonance & Food Testing',
       price: _PRICES.trainingPart1,
-      duration: '2-Day Intensive Hands-on or Zoom Cohort',
+      duration: '5 session 1 hour Zoom Intensive  sesion',
       topics: [
         'Physics & biophysical principles of electromagnetic radiation and wave fields',
         'Operating bioresonance scanning devices (SCOPE & ScopeQ hardware introduction)',
@@ -37,7 +37,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
       part: 'Part 2',
       title: 'Advanced Resonance, Pathogens & Practice Setup',
       price: _PRICES.trainingPart2,
-      duration: '2-Day Advanced Masterclass & Practicum',
+      duration: '5 session 1 hour Zoom Intensive  sesion',
       topics: [
         'Advanced differential health assessments and organ system balancing',
         'Environmental stressor detection (electro-smog, geopathic stress, heavy metals)',
@@ -157,8 +157,8 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
                   {TRAINING.prerequisites} (Prerequisite courses in Anatomy, Physiology, and Nutrition can be arranged if required).
                 </p>
                 <div style={{ borderTop: `1px solid ${borderColor}`, paddingTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px' }}>
-                  <div>🎓 <strong>Certification:</strong> Accredited Diploma upon case study completion</div>
-                  <div>👥 <strong>Format:</strong> Small cohort intensive (Online or Clinic Practical)</div>
+                  <div>🎓 <strong>Certification:</strong> Accredited Certification  upon course completion</div>
+                  <div>👥 <strong>Format:</strong> Zoom Intensive Tailored Sessions</div>
                   <div>👩‍⚕️ <strong>Instructor:</strong> Julie Langton Smith MSc</div>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
               margin: '8px 0 16px',
             }}
           >
-            Authoritative Course Structure & Fees
+            Course Structure & Fees
           </h2>
           <p style={{ fontSize: '15px', lineHeight: 1.7, color: bodyColor }}>
             Tuition rates supplied directly by the Statement of Work. Direct online payment gateways are out of scope; registration is secured via inquiry and bank transfer.

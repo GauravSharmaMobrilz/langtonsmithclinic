@@ -18,6 +18,33 @@ export default function ShopPage({ concept = 'a' }) {
 
   const catalogItems = [
     {
+      title: 'Bioresonance Full Clinical Health Test',
+      category: 'Remote Clinical Testing',
+      author: 'Langton Smith Clinic',
+      desc: 'Complete 6-part biofeedback test via hair sample, written report within 7–10 working days, and 1-on-1 telephone consultation.',
+      price: _PRICES.fullHealthTesting,
+      actionText: 'Book / Health Form',
+      onAction: () => openModal('health-form'),
+    },
+    {
+      title: 'Psychotherapy and Counselling',
+      // category: 'Authoritative Literature',
+      author: 'Julie Langton Smith MSc',
+      // desc: 'Comprehensive practical manual on bioresonance, CAM evolution, hair test analysis, and food elimination protocols.',
+      price: '£95/session',
+      actionText: 'Enquire / Order Book',
+      actionHref: `mailto:${CONTACT.email}?subject=Book%20Order:%20Food%20Sensitivity%20Testing`,
+    },
+    {
+      title: 'Clinical Hypnotherapy',
+      // category: 'Authoritative Literature',
+      author: 'Julie Langton Smith MSc',
+      // desc: 'Comprehensive practical manual on bioresonance, CAM evolution, hair test analysis, and food elimination protocols.',
+      price: ' £95/session',
+      actionText: 'Enquire / Order Book',
+      actionHref: `mailto:${CONTACT.email}?subject=Book%20Order:%20Food%20Sensitivity%20Testing`,
+    },
+    {
       title: 'Food Sensitivity Testing Handbook',
       category: 'Authoritative Literature',
       author: 'Julie Langton Smith MSc',
@@ -26,15 +53,7 @@ export default function ShopPage({ concept = 'a' }) {
       actionText: 'Enquire / Order Book',
       actionHref: `mailto:${CONTACT.email}?subject=Book%20Order:%20Food%20Sensitivity%20Testing`,
     },
-    {
-      title: 'Full Clinical Health Test Test',
-      category: 'Remote Clinical Testing',
-      author: 'Langton Smith Clinic',
-      desc: 'Complete 6-part biofeedback test via hair sample, written report within 7–10 working days, and 1-on-1 telephone consultation.',
-      price: _PRICES.fullHealthTesting,
-      actionText: 'Book / Health Form',
-      onAction: () => openModal('health-form'),
-    },
+    
     {
       title: 'Weight Loss Clinical Hypnotherapy Audio',
       category: 'Therapeutic Audio Download',
@@ -64,7 +83,7 @@ export default function ShopPage({ concept = 'a' }) {
     },
     {
       title: 'Practitioner Certification — Combined Bundle',
-      category: 'Complete Diploma Pathway',
+      category: 'Complete Certification  Pathway',
       author: 'Bioresonance International',
       desc: 'Full Part 1 + Part 2 curriculum with personal mentorship from Julie Langton Smith and supervised clinical case studies.',
       price: _PRICES.trainingCombined,

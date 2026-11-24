@@ -161,7 +161,7 @@ export default function HealthModal({ concept = 'a' }) {
                   color: textColor,
                 }}
               >
-               Client Health Form
+               Bioresonance Health Form
               </h2>
             </div>
           </div>

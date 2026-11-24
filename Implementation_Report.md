@@ -43,7 +43,7 @@ The project successfully built with zero errors via Vite (`npm run build`).
   3. Ensured the form contains all bioresonance hair-testing intake fields, including 6-point test selection, medical & family health history, list of symptoms, scanner database storage consent, and digital signature.
   4. Updated `src/pages/HealthTestingPage.jsx` hero CTA button to **"Complete Bioresonance Health Form"**.
   5. Updated `src/pages/HealthFormPage.jsx` title and button to **"Bioresonance Health Form & Intake Procedure"** / **"⚡ Open Bioresonance Health Form"**.
-  6. Updated `src/utils/navigation.js` dropdown menu item from generic "Client Health Form" to **"Bioresonance Health Form"**.
+  6. Updated `src/utils/navigation.js` dropdown menu item from generic "Bioresonance Health Form" to **"Bioresonance Health Form"**.
   7. Ensured complete separation: Bioresonance Health Form is strictly linked to Bioresonance Health Testing (`/services/health-testing`, `/services/health-form`, and Contact modal triggers) and is NOT linked to Hypnotherapy or Counselling.
 - **Status:** `IMPLEMENTED AND VERIFIED`
 
@@ -181,7 +181,7 @@ The three client-required forms are now strictly separated and correctly assigne
 | `src/pages/CounsellingPage.jsx` | Page Content & Triggers | Added CTA "Submit Psychotherapy/Hypnotherapy Client Form" linked to the client questionnaire. |
 | `src/pages/HealthFormPage.jsx` | Page Content & Labels | Updated breadcrumb, header title, and CTA button to clearly designate "Bioresonance Health Form". |
 | `src/pages/RegistrationPage.jsx` | Page Content & Labels | Updated CTA button to "Practitioner Course Registration". |
-| `src/utils/navigation.js` | Menu Data | Updated dropdown menu label from generic "Client Health Form" to "Bioresonance Health Form". |
+| `src/utils/navigation.js` | Menu Data | Updated dropdown menu label from generic "Bioresonance Health Form" to "Bioresonance Health Form". |
 
 ---
 

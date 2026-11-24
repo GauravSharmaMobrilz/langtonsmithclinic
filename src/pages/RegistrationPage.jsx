@@ -77,7 +77,7 @@ export default function RegistrationPage({ concept = 'a' }) {
               Prerequisites Verification
             </h3>
             <p style={{ fontSize: '14px', lineHeight: 1.7, color: bodyColor }}>
-              A foundational diploma in Anatomy, Physiology, and Nutrition is required. If you do not yet hold these certificates, Julie can recommend accredited prerequisite modules.
+              A foundational Certification  in Anatomy, Physiology, and Nutrition is required. If you do not yet hold these certificates, Julie can recommend accredited prerequisite modules.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function RegistrationPage({ concept = 'a' }) {
               Certification Pathway
             </h3>
             <p style={{ fontSize: '14px', lineHeight: 1.7, color: bodyColor }}>
-              Following intensive tuition, practitioners complete supervised client case studies to receive the accredited Bioresonance Practitioner Diploma.
+              Following intensive tuition, practitioners complete supervised client case studies to receive the accredited Bioresonance Practitioner Certification .
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function RegistrationPage({ concept = 'a' }) {
             Ready to Begin Your Practitioner Training?
           </h2>
           <p style={{ fontSize: '15px', lineHeight: 1.7, maxWidth: '640px', margin: '0 auto 28px', opacity: 0.9 }}>
-            Launch the interactive registration modal to submit your application details, preferred training format, and device intentions directly to Julie Langton Smith MSc.
+            Launch the interactive registration Form to submit your application details, preferred training format, and device intentions directly to Julie Langton Smith MSc.
           </p>
 
           <Button
@@ -126,7 +126,7 @@ export default function RegistrationPage({ concept = 'a' }) {
             concept={concept}
             className="!tw-bg-white !tw-text-b-ink hover:!tw-opacity-90"
           >
-            Launch Practitioner Registration Modal
+            Launch Practitioner Registration Form
           </Button>
         </div>
       </section>

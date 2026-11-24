@@ -54,8 +54,8 @@ export const _PRICES = {
   hypnotherapyDownload: '£4.95',
 
   // [CLINIC] https://www.langtonsmithclinic.com/ — book prices, retain from source, verify before production
-  bookUK: '£19.99',
-  bookInternational: '£24.95',
+  bookUK: '£25',
+  bookInternational: '£30',
   bookNote: 'Price includes postage. Order by emailing langtonsmithclinic@hotmail.co.uk',
 }
 
@@ -233,8 +233,8 @@ export const FOUNDER = {
 
   qualifications: [
     'MSc Transpersonal Psychology and Consciousness Studies (TPACCS) — University of Northampton',
-    'Diploma in Psychotherapeutic Counselling',
-    'Certificate in Psychotherapeutic Counselling Supervision (BPS Accredited)',
+    'Certification  in Psychotherapeutic Counselling',
+    'Certificate in Psychotherapeutic Counselling Supervision (BPS)',
     // Updated title used wherever new title appears
     'Fully qualified Senior Clinical Hypnotherapist',
     'Qualified Naturopath',
@@ -374,8 +374,8 @@ export const HANDBOOK = {
   description: 'Investigates food intolerances, sensitivities, and allergies through the lens of bioresonance and biofeedback therapy, emphasising biophysics and the application of energy in health assessments. Serves as both an informational guide for patients and a practical manual for practitioners.',
   coverImageSrc: InvestigatesfoodIMG,
   coverImageAlt: 'Cover of Food Sensitivity Testing: The Principles of Bioresonance and Biofeedback Therapy by Julie Langton Smith MSc',
-  priceUK: '£19.99', // [CLINIC] includes postage
-  priceInternational: '£24.95', // [CLINIC] includes postage
+  priceUK: '£25', // [CLINIC] includes postage
+  priceInternational: '£30', // [CLINIC] includes postage
   // orderNote: 'Order by emailing langtonsmithclinic@hotmail.co.uk',
   orderEmail: 'langtonsmithclinic@hotmail.co.uk',
   href: 'https://bioresonancetraining.com/bioresonance-training-handbook/',

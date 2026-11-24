@@ -161,7 +161,7 @@ export default function DevicesPage({ concept = 'a' }) {
               SCOPE, MARS III & Scope Q Bioresonance Devices
             </h1>
             <p style={{ fontSize: '17px', lineHeight: 1.7, color: isConceptA ? '#303832' : '#EEF3F2', margin: '0 0 28px' }}>
-              Specialized biofeedback and quantum resonance hardware designed to measure electromagnetic wave fields, map biological imbalances, and broadcast restorative frequencies. Discover comprehensive technical specifications, database capabilities, and independent procurement guidance.
+              Specialised biofeedback and quantum resonance hardware designed to measure electromagnetic wave fields, map biological imbalances, and broadcast restorative frequencies. Discover comprehensive technical specifications, database capabilities, and independent procurement guidance.
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -185,7 +185,7 @@ export default function DevicesPage({ concept = 'a' }) {
                 '🔬 Non-Invasive Hair Sample Analysis',
                 '📊 60,000+ Test Parameter Database',
                 '🌐 Remote & In-Clinic Operation',
-                '🛡️ Independent Procurement Guidance',
+              
               ].map((pill, i) => (
                 <span
                   key={i}
@@ -252,7 +252,7 @@ export default function DevicesPage({ concept = 'a' }) {
                   border: `1px solid ${borderColor}`,
                 }}
               >
-                <div style={{ fontWeight: 700, color: headingColor, marginBottom: '6px' }}>
+                <div style={{ fontWeight: 700, color:'white', marginBottom: '6px' }}>
                   🎯 Primary Operational Role
                 </div>
                 <div>
@@ -472,7 +472,7 @@ export default function DevicesPage({ concept = 'a' }) {
                   border: `1px solid ${borderColor}`,
                 }}
               >
-                <div style={{ fontWeight: 700, color: headingColor, marginBottom: '8px' }}>
+                <div style={{ fontWeight: 700, color: 'white', marginBottom: '8px' }}>
                   🌐 Cross-Disciplinary Applications
                 </div>
                 <p style={{ margin: '0 0 10px' }}>
@@ -531,7 +531,7 @@ export default function DevicesPage({ concept = 'a' }) {
                   border: `1px solid ${borderColor}`,
                 }}
               >
-                <div style={{ fontWeight: 700, color: headingColor, marginBottom: '6px' }}>
+                <div style={{ fontWeight: 700, color: 'white', marginBottom: '6px' }}>
                   💼 Portable Mobile Architecture
                 </div>
                 <div>
@@ -582,7 +582,7 @@ export default function DevicesPage({ concept = 'a' }) {
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
                   <span style={{ fontSize: '18px' }}>⚠️</span>
-                  <h4 style={{ fontSize: '1rem', fontWeight: 800, margin: 0, color: isConceptA ? '#2F5147' : '#FAFAF7' }}>
+                  <h4 style={{ fontSize: '1rem', fontWeight: 800, margin: 0, color:'#2F5147' }}>
                     Hardware Distinction: Scope Q Cannot Scan Remedies
                   </h4>
                 </div>
@@ -773,7 +773,7 @@ export default function DevicesPage({ concept = 'a' }) {
                 <div style={{ fontSize: '11.5px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: accentColor, marginBottom: '4px' }}>
                   {item.label}
                 </div>
-                <div style={{ fontSize: '14.5px', fontWeight: 600, color: headingColor }}>
+                <div style={{ fontSize: '14.5px', fontWeight: 600, color: 'white' }}>
                   {item.value}
                 </div>
               </div>
@@ -789,7 +789,7 @@ export default function DevicesPage({ concept = 'a' }) {
               padding: '20px',
               fontSize: '13.5px',
               lineHeight: 1.6,
-              color: isConceptA ? '#6B5120' : '#E8D2A6',
+              color: '#6B5120',
             }}
           >
             <strong>⚠️ Client & Modern System Verification Note:</strong> {DEVICE_SYSTEM_REQUIREMENTS.verificationNotice}
@@ -930,7 +930,7 @@ export default function DevicesPage({ concept = 'a' }) {
           <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: accentColor, marginBottom: '6px' }}>
             Compliance & Transparency
           </div>
-          <h4 style={{ fontSize: '1.25rem', fontWeight: 700, color: headingColor, margin: '0 0 12px' }}>
+          <h4 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'white', margin: '0 0 12px' }}>
             {DEVICE_MEDICAL_DISCLAIMER.heading}
           </h4>
           <p style={{ fontSize: '13.5px', lineHeight: 1.7, margin: 0 }}>

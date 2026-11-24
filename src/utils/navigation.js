@@ -39,7 +39,7 @@ export const NAV_ITEMS = [
         formLabel: 'Client Form',
       },
       {
-        label: 'Client Health Form',
+        label: 'Bioresonance Health Form',
         href: '/services/health-form',
         // desc: 'Confidential intake record & guidelines',
       },

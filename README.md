@@ -60,11 +60,11 @@ Every navigation menu item opens its own fully designed page:
 | **Bioresonance Health Testing** | `#/services/health-testing` | 6-point hair Test breakdown, SOW price (£300), sample protocol, and modal trigger. |
 | **Counselling & Psychotherapy** | `#/services/counselling` | Transpersonal psychotherapy, anxiety/panic/PTSD specialisms, 50-60 min session structure. |
 | **Clinical Hypnotherapy** | `#/services/hypnotherapy` | SOW updated title ("Fully qualified Senior Clinical Hypnotherapist"), IBS/weight applications. |
-| **Client Health Form** | `#/services/health-form` | Dedicated page with intake guidelines, sample instructions, and modal launch button. |
+| **Bioresonance Health Form** | `#/services/health-form` | Dedicated page with intake guidelines, sample instructions, and modal launch button. |
 | **Training Courses** | `#/training` | Comprehensive syllabus, SOW prices (Part 1 £1,250, Part 2 £1,500, Combined £2,650, Refresher £350/hr). |
 | **Practitioner Registration** | `#/training/registration` | Dedicated registration page with prerequisites and modal launch button. |
 | **Bioresonance Devices** | `#/training/devices` | SCOPE / ScopeQ and MARS III technical comparison and customs advice. |
-| **Training Handbook** | `#/training/handbook` | *Food Sensitivity Testing* manual overview with UK (£19.99) & International (£24.95) prices. |
+| **Training Handbook** | `#/training/handbook` | *Food Sensitivity Testing* manual overview with UK (£25) & International (£30) prices. |
 | **Shop** | `#/shop` | Inquiry-based product and literature catalog (strictly no payment gateway UI). |
 | **Contact Us** | `#/contact` | Verified contact details, interactive contact form, hours, and Littlehampton address. |
 | **Terms & Policies** | `#/terms-policies` | Booking terms, strict 48-hour cancellation policy, payment terms (BACS/cash), privacy notice. |

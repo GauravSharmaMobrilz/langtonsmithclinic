@@ -69,7 +69,7 @@ The training site contains an introduction to Biofeedback/Bioresonance, the prac
 The SOW provides these source attachments:
 
 - Practitioner Registration Form: <https://docs.google.com/document/d/1KERq5c1zafcyy_P1Wgc5PzmbjK_UQt9R/edit?usp=share_link>
-- Client Health Form: <https://docs.google.com/document/d/11b1fMjNjnVViDw4tdREZOMVIMjoDYwXG/edit?usp=share_link>
+- Bioresonance Health Form: <https://docs.google.com/document/d/11b1fMjNjnVViDw4tdREZOMVIMjoDYwXG/edit?usp=share_link>
 
 These two Google Docs could not be read in the initial review environment. Antigravity must attempt to open them using the supplied links and available local/browser access. If either document remains inaccessible, record the blocker in `dailylog.md` and leave the relevant form-field mapping explicitly pending. **Do not make up fields, consent wording, medical questions, validation rules, or legal statements.** Request a DOCX/PDF export or working access from the project owner before implementing the actual forms.
 
@@ -696,7 +696,7 @@ Finally, provide a brief completion report with the concept routes, files change
 
 ## 12. Open dependencies and decisions to confirm before final WordPress build
 
-1. Obtain readable exports/access for the Practitioner Registration Form and Client Health Form Google Docs. Map every field exactly; do not infer missing fields.
+1. Obtain readable exports/access for the Practitioner Registration Form and Bioresonance Health Form Google Docs. Map every field exactly; do not infer missing fields.
 2. Obtain the exact client-approved **Professional Medical Disclaimer** wording required on the Clinical Health Testing page.
 3. Confirm the exact Finix theme package/version and whether the live WordPress environment uses Elementor, the bundled theme widgets, and any required child theme.
 4. Confirm which existing logo file is the approved final logo and whether the client expects a refinement before it is used in the header.

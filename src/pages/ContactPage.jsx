@@ -125,7 +125,7 @@ export default function ContactPage({ concept = 'a' }) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginBottom: '36px' }}>
               <div style={{ background: cardBg, borderRadius: '12px', padding: '24px', border: `1px solid ${borderColor}` }}>
                 <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: accentColor, marginBottom: '4px' }}>
-                  Electronic Inquiries
+                  Email Enquiries
                 </div>
                 <a href={`mailto:${CONTACT.email}`} style={{ fontSize: '16px', fontWeight: 700, color: headingColor, textDecoration: 'none' }}>
                   {CONTACT.email}
@@ -174,12 +174,12 @@ export default function ContactPage({ concept = 'a' }) {
               {/* <Button onClick={() => openModal('health-form')} variant="outline" concept={concept}>
                 Bioresonance Health Form
               </Button> */}
-              <Button onClick={() => openModal('client-consultation')} variant="outline" concept={concept}>
+              {/* <Button onClick={() => openModal('client-consultation')} variant="outline" concept={concept}>
                 Client Questionnaire
               </Button>
               <Button onClick={() => openModal('registration')} variant="ghost" concept={concept}>
                 Practitioner Course Registration
-              </Button>
+              </Button> */}
             </div>
           </div>
 

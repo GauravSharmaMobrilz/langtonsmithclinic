@@ -111,7 +111,7 @@ export default function SiteFooter({ concept = 'a' }) {
                 { label: 'Full Health Testing (£300)', href: '/services/health-testing' },
                 { label: 'Counselling & Psychotherapy', href: '/services/counselling' },
                 { label: 'Senior Clinical Hypnotherapy', href: '/services/hypnotherapy' },
-                { label: 'Client Health Form Page', href: '/services/health-form' },
+                { label: 'Bioresonance Health Form Page', href: '/services/health-form' },
               ].map((link) => (
                 <li key={link.label}>
                   <button
@@ -150,7 +150,7 @@ export default function SiteFooter({ concept = 'a' }) {
                     textDecoration: 'underline',
                   }}
                 >
-                  ⚡ Open Client Health Form
+                  ⚡ Open Bioresonance Health Form
                 </button>
               </li>
               <li style={{ marginTop: '4px' }}>
@@ -185,7 +185,7 @@ export default function SiteFooter({ concept = 'a' }) {
                 { label: 'Practitioner Courses & Prices', href: '/training' },
                 { label: 'Registration Requirements', href: '/training/registration' },
                 { label: 'Bioresonance Devices (SCOPE & MARS)', href: '/training/devices' },
-                { label: 'Training Handbook (£19.99/£24.95)', href: '/training/handbook' },
+                { label: 'Training Handbook (£25/£30)', href: '/training/handbook' },
               ].map((link) => (
                 <li key={link.label}>
                   <button

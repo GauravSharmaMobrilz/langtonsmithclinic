@@ -111,7 +111,7 @@ export default function TrainingHighlight({ concept = 'a' }) {
               View Full Syllabus & Courses
             </Button>
             <Button onClick={() => openModal('registration')} variant="outline" concept={concept}>
-              Open Registration Modal
+              Open Registration Form 
             </Button>
           </div>
           {/* <p style={{ fontSize: '12px', color: '#737373', marginTop: '14px', fontStyle: 'italic', lineHeight: 1.5 }}>

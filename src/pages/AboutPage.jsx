@@ -71,7 +71,7 @@ export default function AboutPage({ concept = 'a' }) {
                 margin: 0,
               }}
             >
-              Over 28 years of dedicated clinical practice uniting Transpersonal Psychotherapy, Clinical Hypnotherapy, and Accredited Bioresonance Technology.
+              Over 28 years of dedicated clinical practice uniting Transpersonal Psychotherapy, Clinical Hypnotherapy and Bioresonance Technology.
             </p>
           </div>
         </div>

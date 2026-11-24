@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from '../context/RouterContext.jsx'
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx'
 import Button from '../components/common/Button.jsx'
 import { CONTACT } from '../data/siteContent.js'
 import SleepHypnosisVideo from '../components/common/SleepHypnosisVideo.jsx'
+import AppointmentEnquiryModal from '../components/modals/AppointmentEnquiryModal.jsx'
 
 export default function HypnotherapyPage({ concept = 'a' }) {
   const isConceptA = concept === 'a'
   const { navigate, openModal } = useRouter()
+  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false)
   const bg = isConceptA ? '#F6F3ED' : '#FAFAF7'
   const heroBg = isConceptA ? '#FFFFFF' : '#1F303A'
   const cardBg = isConceptA ? '#FFFFFF' : '#EEF3F2'
@@ -25,6 +27,22 @@ export default function HypnotherapyPage({ concept = 'a' }) {
     { title: 'Menopausal & Sleep Optimization', desc: 'Regulating hot flashes, emotional equilibrium, insomnia, and deep restorative sleep patterns.' },
   ]
 
+  const applicationsLists = [
+    { title: 'Anxiety' },
+    { title: 'Panic Disorders' },
+    { title: 'Child and Teenage Anxiety' },
+    { title: 'PTSD' },
+    { title: 'Post Viral Anxiety' },
+    { title: 'Obsessive Compulsive Behaviours' },
+    { title: 'Loss and Bereavement' },
+    { title: 'Pet Bereavement' },
+    { title: 'Relationship Therapy' },
+    { title: 'Fear of Flying' },
+    { title: 'Smoking Cessation' },
+    { title: 'Weight Loss Issues' },
+    { title: 'Unknown sources of Fear and Anxiety' }
+  ]
+
   return (
     <div style={{ background: bg, minHeight: '100vh', color: bodyColor }}>
       {/* Viewport-aware Hero Header */}
@@ -36,7 +54,7 @@ export default function HypnotherapyPage({ concept = 'a' }) {
           minHeight: '48vh',
           display: 'flex',
           justifyContent: 'center',
-          alignItems:'center'
+          alignItems: 'center'
         }}
 
       >
@@ -81,9 +99,9 @@ export default function HypnotherapyPage({ concept = 'a' }) {
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <Button 
-                onClick={() => openModal('client-consultation')} 
-                variant="primary" 
+              <Button
+                onClick={() => openModal('client-consultation')}
+                variant="primary"
                 concept={concept}
               >
                 Client Questionnaire
@@ -131,6 +149,10 @@ export default function HypnotherapyPage({ concept = 'a' }) {
             <p style={{ fontSize: '15.5px', lineHeight: 1.8, marginBottom: '24px' }}>
               Julie Langton Smith practices both <strong>Hypno-psychotherapy</strong> (combining analytical transpersonal counseling with hypnotic states) and <strong>Traditional clinical Hypnotherapy</strong>.
             </p>
+            <p style={{ fontSize: '15.5px', lineHeight: 1.8, marginBottom: '24px' }}>
+              A hypno-pscyhotherapist differs from a hypnotherapist in that they will have undertaken training in psychotherapy theory and practice. This integrative approach utilises both techniques to help with deeper problems that may not be able to be addressed with hypnotherapy alone (for example trauma or abuse), allowing the therapist to use their training and skills in psychotherapy to provide a supportive and empathic therapeutic relationship.
+            </p>
+
 
             {/* Session Format Card */}
             <div
@@ -144,8 +166,18 @@ export default function HypnotherapyPage({ concept = 'a' }) {
               }}
             >
               <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: isConceptA ? '#2F5147' : '#A8CDC4', margin: '0 0 12px' }}>
-                Course Structure & Booking Parameters
+                therapy session and booking by appointment only
               </h3>
+              <div style={{ margin: '14px 0 18px' }}>
+                <Button
+                  onClick={() => setIsEnquiryModalOpen(true)}
+                  variant="primary"
+                  concept={concept}
+                  className="tw-w-full sm:tw-w-auto"
+                >
+                  Book an Appointment
+                </Button>
+              </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px' }}>
                 <li>📅 <strong>Minimum Course:</strong> Sessions are typically booked in blocks of a minimum of 4 weekly sessions to ensure continuity and best results.</li>
                 <li>📍 <strong>In-Person Location:</strong> 37 Surrey Street, Littlehampton, West Sussex, BN17 5BH.</li>
@@ -193,7 +225,7 @@ export default function HypnotherapyPage({ concept = 'a' }) {
           </h3>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
-            {applications.map((a) => (
+            {applicationsLists.map((a) => (
               <div
                 key={a.title}
                 style={{
@@ -203,13 +235,20 @@ export default function HypnotherapyPage({ concept = 'a' }) {
                   border: `1px solid ${borderColor}`,
                 }}
               >
-                <h4 style={{ margin: '0 0 8px', fontSize: '1.15rem', color: headingColor }}>{a.title}</h4>
-                <p style={{ margin: 0, fontSize: '13.5px', lineHeight: 1.6, color: bodyColor }}>{a.desc}</p>
+                <h4 style={{ margin: '0 0 0px', fontSize: '1.15rem', color: headingColor }}>{a.title}</h4>
+                {/* <p style={{ margin: 0, fontSize: '13.5px', lineHeight: 1.6, color: bodyColor }}>{a.desc}</p> */}
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Appointment Enquiry Modal */}
+      <AppointmentEnquiryModal
+        isOpen={isEnquiryModalOpen}
+        onClose={() => setIsEnquiryModalOpen(false)}
+        concept={concept}
+      />
     </div>
   )
 }

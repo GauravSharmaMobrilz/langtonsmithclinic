@@ -162,7 +162,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                   View more →
                 </button>
 
-                {service.id === 'health-Testing' && (
+                {/* {service.id === 'health-Testing' && (
                   <button
                     type="button"
                     onClick={() => openModal('health-form')}
@@ -177,11 +177,11 @@ export default function ServiceOverview({ concept = 'a' }) {
                       textDecoration: 'underline',
                     }}
                   >
-                    Client Health form ↗
+                    Bioresonance Health Form ↗
                   </button>
-                )}
+                )} */}
 
-                {(service.id === 'counselling' || service.id === 'hypnotherapy') && (
+                {/* {(service.id === 'counselling' || service.id === 'hypnotherapy') && (
                   <button
                     type="button"
                     onClick={() => openModal('client-consultation')}
@@ -198,7 +198,7 @@ export default function ServiceOverview({ concept = 'a' }) {
                   >
                     Client Questionnaire ↗
                   </button>
-                )}
+                )} */}
               </div>
             </div>
           )

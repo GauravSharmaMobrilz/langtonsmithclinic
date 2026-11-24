@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import videoThumbnail from "../../assets/images/hypnotherapy/videoThumbnail.jpg"
 
 export default function SleepHypnosisVideo() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -37,9 +38,9 @@ export default function SleepHypnosisVideo() {
             {!isPlaying ? (
               <>
                 <img
-                  src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                  src={videoThumbnail}
                   alt="Sleep Hypnosis for Insomnia by Julie Langton Smith"
-                  className="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-105"
+                  className="tw-absolute tw-inset-0  tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-105"
                 />
 
                 <div className="tw-absolute tw-inset-0 tw-bg-black/25 tw-transition-colors group-hover:tw-bg-black/40" />
@@ -49,7 +50,7 @@ export default function SleepHypnosisVideo() {
                   type="button"
                   onClick={() => setIsPlaying(true)}
                   aria-label="Play Sleep Hypnosis video"
-                  className="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center"
+                  className="tw-absolute tw-bg-transparent tw-inset-0 tw-flex tw-items-center tw-justify-center"
                 >
                   <span className="tw-flex tw-h-12 tw-w-12 tw-items-center tw-justify-center tw-rounded-full tw-border tw-border-white/60 tw-bg-white/20 tw-text-white tw-shadow-lg tw-backdrop-blur-md tw-transition-transform tw-duration-300 group-hover:tw-scale-110 group-hover:tw-bg-white/30">
 

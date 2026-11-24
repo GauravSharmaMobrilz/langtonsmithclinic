@@ -61,7 +61,7 @@ export default function HealthFormPage({ concept = 'a' }) {
 
             {/* <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Button onClick={() => openModal('health-form')} variant="primary" concept={concept}>
-                ⚡ Open Client Health Form
+                ⚡ Open Bioresonance Health Form
               </Button>
             </div> */}
           </div>
@@ -136,7 +136,7 @@ export default function HealthFormPage({ concept = 'a' }) {
             concept={concept}
             className="!tw-bg-white !tw-text-b-ink hover:!tw-opacity-90"
           >
-             Client Health Form
+             Bioresonance Health Form
           </Button>
         </div>
       </section>

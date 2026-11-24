@@ -1,12 +1,15 @@
 
 import React from 'react'
 import SectionContainer from './SectionContainer'
+import Button from './Button'
+import { useRouter } from '../../context/RouterContext'
 
 export default function FullHealthTestSection() {
-  const paymentMethods = [
-    'Bank transfer (BACS)',
-    'Cheque',
-  ]
+  const { navigate, openModal } = useRouter()
+  // const paymentMethods = [
+  //   'Bank transfer (BACS)',
+  //   'Cheque',
+  // ]
 
   return (
     <SectionContainer
@@ -62,11 +65,16 @@ export default function FullHealthTestSection() {
                 </h3>
 
                 <p className="tw-mt-2 tw-text-[13px] tw-leading-6 tw-text-[#777b7c]">
-                  Payment can be made using either of the following methods.
+                  {/* Payment can be made using either of the following methods. */}
+                  payment is made upon receipt of an invoice after submission of the Bioresonance health form.
                 </p>
+                <Button onClick={() => openModal('health-form')} variant="primary" >
+                  Bioresonance Health Form
+                </Button>
               </div>
 
-              <div className="tw-space-y-3">
+
+              {/* <div className="tw-space-y-3">
                 {paymentMethods.map((method) => (
                   <div
                     key={method}
@@ -90,7 +98,7 @@ export default function FullHealthTestSection() {
                     </span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* Fee Card */}
@@ -113,7 +121,7 @@ export default function FullHealthTestSection() {
                 </p>
               </div>
 
-              <div className="tw-relative tw-mt-8 tw-border-t tw-border-white/20 tw-pt-5">
+              <div className="tw-relative tw-mt-0 tw-border-t tw-border-white/20 tw-pt-5">
                 <div className="tw-flex tw-items-center tw-gap-2 tw-text-[13px] tw-font-medium tw-text-white">
                   <svg
                     width="17"
