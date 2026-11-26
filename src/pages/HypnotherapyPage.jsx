@@ -186,6 +186,8 @@ export default function HypnotherapyPage({ concept = 'a' }) {
             </div>
           </div>
 
+       
+
           {/* Testimonial CQ, USA */}
           <div>
             <div
@@ -207,8 +209,40 @@ export default function HypnotherapyPage({ concept = 'a' }) {
               <span style={{ fontSize: '12px', color: '#777777' }}>Weight Loss Clinical Hypnotherapy</span>
             </div>
           </div>
+
+          
         </div>
 
+
+   {/* Past Life Regression */}
+          <div
+          style={{
+                background: cardBg,
+                borderRadius: isConceptA ? '18px' : '12px',
+                padding: '36px',
+                marginBottom:'50px',
+                border: `1px solid ${borderColor}`,
+                boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
+              }}>
+<h2
+              style={{
+                fontFamily: isConceptA ? "'Cormorant Garamond', Georgia, serif" : "'Manrope', Inter, sans-serif",
+                fontSize: '2.2rem',
+                fontWeight: 700,
+                color: headingColor,
+                margin: '0 0 20px',
+                lineHeight: 1.2,
+              }}
+            >
+              Past Life Regression
+            </h2>
+            <p style={{ fontSize: '15.5px', lineHeight: 1.8, marginBottom: '24px' }}>
+             Some fears, phobias or behaviours are thought to be linked to a past life, this is a specialised area of working with an individual to discover if there are any significant past life events that are affecting a behaviour such as addiction, fear/phobia, sense
+of depression/anxiety and self defeating actions. Past life does not necessarily mean that a person will go back into another life but it sometimes helps the individual to understand why they are doing something that they want to stop, it can be a very interesting
+form of working to find out about a deeper sense of self.
+            </p>
+          </div>
+          
         {/* Applications Grid */}
         <div style={{ marginBottom: '56px' }}>
           <h3
@@ -242,6 +276,7 @@ export default function HypnotherapyPage({ concept = 'a' }) {
           </div>
         </div>
       </section>
+      
 
       {/* Appointment Enquiry Modal */}
       <AppointmentEnquiryModal

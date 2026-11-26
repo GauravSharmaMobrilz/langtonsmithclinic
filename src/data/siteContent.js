@@ -234,7 +234,7 @@ export const FOUNDER = {
   qualifications: [
     'MSc Transpersonal Psychology and Consciousness Studies (TPACCS) — University of Northampton',
     'Certification  in Psychotherapeutic Counselling',
-    'Certificate in Psychotherapeutic Counselling Supervision (BPS)',
+    'Diploma in Psychotherapeutic Counselling Supervision (BPS)',
     // Updated title used wherever new title appears
     'Fully qualified Senior Clinical Hypnotherapist',
     'Qualified Naturopath',

@@ -111,7 +111,7 @@ export default function CounsellingPage({ concept = 'a' }) {
               Transpersonal psychotherapy looks beyond superficial symptom suppression to explore deeper underlying factors — including mind-body connections — that can contribute to both psychological distress and physical somatic issues such as IBS, weight fluctuations, chronic headaches, insomnia, cravings, and back or joint pain.
             </p>
             <p style={{ fontSize: '15.5px', lineHeight: 1.8, marginBottom: '24px' }}>
-              Julie Langton Smith holds a Master’s Degree in Transpersonal Psychology and Consciousness Studies (TPACCS) from the University of Northampton, a Certification  in Psychotherapeutic Counselling, and a Certificate in Psychotherapeutic Counselling Supervision (BPS). Her sessions provide a secure, confidential sanctuary for profound healing.
+              Julie Langton Smith holds a Master’s Degree in Transpersonal Psychology and Consciousness Studies (TPACCS) from the University of Northampton, a Certification  in Psychotherapeutic Counselling, and a diploma in Psychotherapeutic Counselling Supervision (BPS). Her sessions provide a secure, confidential sanctuary for profound healing.
             </p>
 
             {/* Session Structure Card */}

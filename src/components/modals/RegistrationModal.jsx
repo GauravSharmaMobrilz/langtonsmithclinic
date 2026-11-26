@@ -26,7 +26,7 @@ export default function RegistrationModal({ concept = 'a' }) {
     educationBackground: '',
     specialNeeds: '',
     previousExperience: '',
-    specificCourse: 'Part 1 — Foundational (£1,250)',
+    specificCourse: 'Part 1 — Foundational Certificated (£1,250)',
     personalInfoWhyCourse: '',
     signed: '',
     dated: new Date().toISOString().split('T')[0],
@@ -436,8 +436,8 @@ export default function RegistrationModal({ concept = 'a' }) {
                   onChange={(e) => setFormData({ ...formData, specificCourse: e.target.value })}
                   style={{ width: '100%', padding: '10px 12px', background: inputBg, border: `1px solid ${borderColor}`, borderRadius: '6px', color: textColor, fontSize: '14px' }}
                 >
-                  <option>Part 1 — Foundational ({_PRICES.trainingPart1})</option>
-                  <option>Part 2 — Advanced Masterclass ({_PRICES.trainingPart2})</option>
+                  <option>Part 1 — Foundational Certificated ({_PRICES.trainingPart1})</option>
+                  <option>Part 2 — Advanced Masterclass Certificated ({_PRICES.trainingPart2})</option>
                   <option>Combined — Complete Certification ({_PRICES.trainingCombined})</option>
                   <option>Annual Refresher ({_PRICES.annualRefresher})</option>
                 </select>

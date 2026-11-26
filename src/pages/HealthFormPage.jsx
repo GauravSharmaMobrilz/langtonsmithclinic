@@ -53,7 +53,7 @@ export default function HealthFormPage({ concept = 'a' }) {
                 margin: '8px 0 20px',
               }}
             >
-              Client Health Intake & Assessment Form
+              Bioresonance Health Form
             </h1>
             <p style={{ fontSize: '17px', lineHeight: 1.7, color: isConceptA ? '#303832' : '#EEF3F2', margin: '0 0 28px' }}>
               Complete your pre-consultation health history, symptom inventory, and hair sample protocol. All health information is handled under strict practitioner confidentiality.

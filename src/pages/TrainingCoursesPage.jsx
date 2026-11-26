@@ -120,7 +120,7 @@ export default function TrainingCoursesPage({ concept = 'a' }) {
                   margin: '8px 0 20px',
                 }}
               >
-                Bioresonance Business Practitioner Training
+                Bioresonance for professional health practitioners Training
               </h1>
               <p style={{ fontSize: '17px', lineHeight: 1.7, color: isConceptA ? '#303832' : '#EEF3F2', margin: '0 0 28px' }}>
                 A professional accredited programme taught directly by Julie Langton Smith MSc, empowering healthcare professionals and natural therapists to establish a successful bioresonance practice.

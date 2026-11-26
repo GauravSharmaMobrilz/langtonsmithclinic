@@ -144,7 +144,7 @@ export default function AudiencePathways({ concept = 'a' }) {
               style={{
                 fontSize: '15px',
                 lineHeight: 1.7,
-                color: isConceptA ? '#A9BBA9' : '#EEF3F2',
+                color: 'rgb(77 92 77)',
                 margin: '0 0 28px',
                 flex: 1,
               }}
